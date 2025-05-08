@@ -1,0 +1,418 @@
+
+
+
+<div class="hiq-page-wrap">
+<div class="hiq-t-wrap">
+		
+  	  <div class="hiq-t ">
+				<ul class="breadcrumbs"><li><a hqid="1906713" href="/home" class="breadcrumb-links">ON24 REST API</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="1907633" href="/event-management" class="breadcrumb-links">Event Management</a></li><li> <span>››</span>Update a Webinar</li></ul>  	
+		<h3><strong><span style="font-size:24px;"><span style="font-family:Arial,Helvetica,sans-serif;">/v2/client/{clientId}/event/{eventid}</span></span></strong></h3>
+
+<h3><strong><span style="font-size:24px;"><span style="font-family:Arial,Helvetica,sans-serif;">METHOD: PUT</span></span></strong></h3>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Updates a webinar.</span></span></p>
+
+<p><strong><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Parameters:</span></span></strong></p>
+
+<table>
+	<tbody>
+		<tr>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Name</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Located in</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Required</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Description</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Default</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Schema</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Example</span></span></th>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>clientId</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">path</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The client id</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">18091</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>eventId</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">path</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The event id</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">9486514</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>accessTokenKey</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">client access token key</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">63129107067A520E6B7DE18D5E1CB2BF</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>accessTokenSecret</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">client access token secret</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">072639740ac239333e3708a1623b9de3590d972e6b1060071b726ecfd9b216001b45391717d9fbeb780438</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>content-type</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Possible values: &quot;application/x-www-form-urlencoded&quot;&nbsp;or<br />
+			&ldquo;multipart/formdata&quot;</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&quot;application/x-www-form-urlencoded&quot;</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>title</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Event&#39;s name. Limited to less than 251 characters</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Event&#39;s title sample</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>languageCd</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Valid language codes will be retrieved by&nbsp; calling the api method &#39;getLanguageCodes&#39;</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">en</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>countryCd</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Indicates linguistic variations associated with a specific country</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">CN</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>timeZone</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The valid Time Zones will be retrieved calling the api method &#39;getTimeZones&#39;</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">America/Los_Angeles</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>tagCampaign</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Webinar&#39;s tag campaign. You can set up to 10 tags, providing multiple tagCampaign parameters with different values. See below for detailed information.</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>campaignCode</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Event&#39;s campaign code</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>liveStart</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Event&#39;s start date.</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">08/26/2016 09:00 AM</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>liveDuration</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Event&#39;s duration in minutes. Range of values: [15-480].</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">90</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>eventType</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The valid even types will be retrieved calling the api method &#39;getEventTypes&#39;</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">webcam</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>archiveAvailable</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Indicates if the Archive Option is Enabled or Disabled for this event</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Y</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">N</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>promotionalSummary</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Event&rsquo;s promotional summary</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>customAccountTag</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Custom account tag IDs configured for the account.</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Number</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">701</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>enableRegistration</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Enables/Disables registration. Accepted values are <strong>Y</strong> and <strong>N</strong>.</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">N</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><strong><span style="font-family:Arial,Helvetica,sans-serif;">Notes:</span></strong></span></p>
+
+<ul>
+	<li><span style="font-size:14px;"><strong>liveDuration&nbsp;</strong>parameter conditions:</span>
+
+	<ul>
+		<li><span style="font-size:14px;">When copying a webinar, users are able to provide a liveDuration value in 15 minute increments (e.g. 15, 30, 45, 60, etc.) up to 120 minutes.</span></li>
+		<li><span style="font-size:14px;">Above 120 minutes, increments will be 30 minutes up to 480 minutes.</span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:14px;"><strong>liveStart&nbsp;</strong>accepted date/time formats:</span>
+	<ul>
+		<li><span style="font-size:14px;"><strong>MM/DD/YYYY hh:mm a</strong>&nbsp;(08/26/2016 09:00 AM)</span></li>
+		<li><span style="font-size:14px;"><strong>YYYY-MM-DDThh:mm:ss&nbsp;</strong>Default timezone will be Pacific Time. (2016-08-26T09:00:00)&nbsp;</span></li>
+		<li><span style="font-size:14px;"><strong>YYYY-MM-DDThh:mm:ss&plusmn;zz:zz&nbsp;</strong>where &plusmn;zz:zz is timezone&#39;s offset (2016-08-26T09:00:00-07:00)</span></li>
+		<li><span style="font-size:14px;">JavaScript Date.toString() format is also supported (Wed Apr 04 2018 16:12:41 GMT+0200 (CEST)&nbsp;)</span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:14px;"><strong>tagCampaign&nbsp;</strong>parameter conditions:</span>
+	<ul>
+		<li><span style="font-size:14px;">When copying a webinar users are allowed to add up to 10 custom tags via the tagCampaign parameter.</span></li>
+		<li><span style="font-size:14px;">Every tag that is associated with the webinar should be available in the&nbsp;<strong>tags&nbsp;</strong>array field in the response.</span></li>
+		<li><span style="font-size:14px;">The following characters can not be used and will result in an error:&nbsp;<strong>&pound;$!%&*()}{@#~?&gt;&lt;&#39;,&quot;|=_+&not;</strong></span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:14px;"><strong>customAccountTag&nbsp;</strong>parameter conditions:</span>
+	<ul>
+		<li><span style="font-size:14px;">Supported only for client accounts with enabled custom account tags.</span></li>
+		<li><span style="font-size:14px;">When copying a webinar for an account with enabled custom account tags, users are allowed to add up to 3&nbsp;tag IDs</span></li>
+		<li><span style="font-size:14px;">Provided values must match configured client account values.</span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:14px;"><strong>languageCd&nbsp;</strong>/&nbsp;<strong>countryCd&nbsp;</strong>parameters conditions:</span>
+	<ul>
+		<li><span style="font-size:14px;">Following are allowed pairs of language/country values when copying an event:</span>
+		<ul>
+			<li><span style="font-size:14px;">Chinese (Simplified): languageCd=<strong>&quot;zh&quot;</strong>, countryCd=<strong>&quot;CN&quot;</strong></span></li>
+			<li><span style="font-size:14px;">Chinese (Traditional): languageCd=<strong>&quot;zh&quot;</strong>, countryCd=<strong>&quot;TW&quot;</strong></span></li>
+			<li><span style="font-size:14px;">English (UK): languageCd=<strong>&quot;en&quot;</strong>, countryCd=<strong>&quot;UK&quot;</strong></span></li>
+		</ul>
+		</li>
+		<li><span style="font-size:14px;">For other languages, No countryCd is allowed.</span></li>
+	</ul>
+	</li>
+</ul>
+
+<p style="margin-left: 40px;">&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Additional information on conditions required and restrictions can be found here: <a href="/update-webinar/conditions">Conditions & Restrictions</a>.</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Response:</strong></span></span></p>
+
+<p><span style="font-size:14px;">Content-Type: application/json</span></p>
+
+<table>
+	<thead>
+		<tr>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Status Code</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Reason</span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">400</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Webinar was not created due to errors in the parameters</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">401</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">AccessTokenKey and AccessTokenSecret are wrong or invalid.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">You do not have permission to perform the requested operation.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">You have reached the maximum number of calls for this api.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The client id {clientId} is inactive.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">404</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The client {clientId} doesn&#39;t exist.</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><strong style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Please see the <a hqid="2465791" href="/api-throttling">throttling </a>page for&nbsp;limits with this endpoint.</strong></span></p>
+
+<p>&nbsp;</p>
+
+	  </div>
+ </div>
+ <div id="ui-page-fb-wrap"></div>
+ <div class="hiq-footer-wrap">
+    
+              <style>
+          .footer_type2 .footer_container {
+    flex: 1;
+}
+
+.footer_type2 a {
+    text-decoration: none;
+}
+
+.footer_type2 .links_block {
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+}
+
+.footer_prototype.footer_type2 {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    height: 250px;
+    display: flex;
+}
+
+.footer_type2 .footer_links ul {
+    display: block;
+    float: left;
+}
+
+.footer_type2 .footer_links ul li {
+    display: inline-block;
+    margin: 0 20px 0 0px;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+.footer_type2 .footer_social_icons ul {
+    margin: auto;
+    display: block;
+}
+
+.footer_type2 .footer_links {
+    display: block;
+    flex: 7;
+    position: relative;
+    right: 0;
+    /*
+         display: inline-block;
+         width: 100%;
+         */
+}
+
+.footer_type2 .footer_social_icons {
+    display: block;
+    flex: 7;
+    position: relative;
+    /*
+         display: inline-block;
+         width: 19%;
+         float: right;
+         */
+}
+
+.footer_type2 .footer_social_icons ul {
+    float: right;
+}
+
+.footer_type2 .copyright_text {
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer_type2 .copyright_text p {
+    margin-top: 26px;
+    text-align: left;
+    color: #616161;
+}
+
+.footer_type2 .footer_links ul {
+    text-align: center;
+}
+
+.footer_type2 .footer_links ul li a {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i::before {
+    font-size: 20px;
+}
+
+.footer_type2 .footer_social_icons ul li a img {
+    max-height: 100%;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    margin: 0 10px;
+    max-width: 30px;
+}        </style>
+            <div class="footer_prototype footer_type2">
+    <!-- please make any changes to your footer after this line -->
+    <div class="footer_container">
+        <div class="copyright_text">
+            <p>© Copyright&nbsp;2024&nbsp;ON24, Inc.<br>ON24 patents may apply – click&nbsp;<a data-cke-saved-href="https://www.on24.com/on24-virtual-patent-marking/" href="https://www.on24.com/on24-virtual-patent-marking/">here</a>&nbsp;for more information.<br>All rights reserved.</p>
+        </div>
+    </div>
+</div>    
+  </div>
+
+
+</div>
+
+
+
+
+

@@ -1,0 +1,106 @@
+{
+  "success": true,
+  "data": {
+    "content": "\r\n\r\n\r\n<div class=\"hiq-page-wrap\">\r\n<div class=\"hiq-t-wrap\">\r\n\t\t\r\n  \t  <div class=\"hiq-t \">\r\n\t\t\t\t<ul class=\"breadcrumbs\"><li><a hqid=\"1906713\" href=\"/home\" class=\"breadcrumb-links\">ON24 REST API</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid=\"1906768\" href=\"/analytics\" class=\"breadcrumb-links\">Analytics</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid=\"1906770\" href=\"/event-level\" class=\"breadcrumb-links\">Event Level</a></li><li> <span>\u203a\u203a</span>Email Statistics</li></ul>  \t\r\n\t\t<h3><strong>/v2/client/{clientId}/event/{eventId}/emailstatistics</strong></h3>\r\n\r\n<h3><strong>METHOD: GET</strong></h3>\r\n\r\n<p>Returns all email statistics for a particular event.&nbsp; &nbsp;&nbsp;</p>\r\n\r\n<h4>Parameters:</h4>\r\n\r\n<table>\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<th>Name</th>\r\n\t\t\t<th>Located&nbsp;In</th>\r\n\t\t\t<th>Required</th>\r\n\t\t\t<th>Description</th>\r\n\t\t\t<th>Default</th>\r\n\t\t\t<th>Schema</th>\r\n\t\t\t<th>Example</th>\r\n\t\t</tr>\r\n\t</thead>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td><strong>clientId</strong></td>\r\n\t\t\t<td>path</td>\r\n\t\t\t<td>yes</td>\r\n\t\t\t<td>The client id</td>\r\n\t\t\t<td>-</td>\r\n\t\t\t<td>number</td>\r\n\t\t\t<td>1498</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td><strong>eventId</strong></td>\r\n\t\t\t<td>path</td>\r\n\t\t\t<td>yes</td>\r\n\t\t\t<td>The event id</td>\r\n\t\t\t<td>-</td>\r\n\t\t\t<td>number</td>\r\n\t\t\t<td>1487542</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td><strong>accessTokenKey</strong></td>\r\n\t\t\t<td>header</td>\r\n\t\t\t<td>yes</td>\r\n\t\t\t<td>Security Parameter</td>\r\n\t\t\t<td>-</td>\r\n\t\t\t<td>string</td>\r\n\t\t\t<td>63129107067A520E6B7DE18D5E1CB2BF</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td><strong>accessTokenSecret</strong></td>\r\n\t\t\t<td>header</td>\r\n\t\t\t<td>yes</td>\r\n\t\t\t<td>Security Parameter</td>\r\n\t\t\t<td>-</td>\r\n\t\t\t<td>string</td>\r\n\t\t\t<td>072639740ac239333e3708a1623b9de3590d972e6b1060071b726ecfd9b216001b45391717d9fbeb780438</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Response:</p>\r\n\r\n<p>Content-Type: application/json</p>\r\n\r\n<table>\r\n\t<thead>\r\n\t\t<tr>\r\n\t\t\t<th>Status Code</th>\r\n\t\t\t<th>Reason</th>\r\n\t\t</tr>\r\n\t</thead>\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>200</td>\r\n\t\t\t<td>Return list of email statistics for an event</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>401</td>\r\n\t\t\t<td>AccessTokenKey and AccessTokenSecret are wrong or invalid.</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>403</td>\r\n\t\t\t<td>You do not have permission to perform the requested operation.</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>403</td>\r\n\t\t\t<td>You have reached the maximum number of calls for this api.</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>403</td>\r\n\t\t\t<td>The client id {clientId} is inactive.</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>403</td>\r\n\t\t\t<td>The event {eventId} is inactive.</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>404</td>\r\n\t\t\t<td>The event {eventId} doesn&#39;t exist.</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Please see the <a hqid=\"2465791\" href=\"/api-throttling\">throttling </a>page for limits with this endpoint.</strong></p>\r\n\r\n\t  </div>\r\n </div>\r\n <div id=\"ui-page-fb-wrap\"></div>\r\n <div class=\"hiq-footer-wrap\">\r\n    \r\n              <style>\r\n          .footer_type2 .footer_container {\n    flex: 1;\n}\n\n.footer_type2 a {\n    text-decoration: none;\n}\n\n.footer_type2 .links_block {\n    padding-top: 20px;\n    height: 100%;\n    display: flex;\n}\n\n.footer_prototype.footer_type2 {\n    background-color: #ffffff;\n    padding: 50px 20px;\n    height: 250px;\n    display: flex;\n}\n\n.footer_type2 .footer_links ul {\n    display: block;\n    float: left;\n}\n\n.footer_type2 .footer_links ul li {\n    display: inline-block;\n    margin: 0 20px 0 0px;\n}\n\n.footer_type2 .footer_social_icons ul li {\n    display: inline-block;\n    margin: auto;\n}\n\n.footer_type2 .footer_social_icons ul {\n    margin: auto;\n    display: block;\n}\n\n.footer_type2 .footer_links {\n    display: block;\n    flex: 7;\n    position: relative;\n    right: 0;\n    /*\n         display: inline-block;\n         width: 100%;\n         */\n}\n\n.footer_type2 .footer_social_icons {\n    display: block;\n    flex: 7;\n    position: relative;\n    /*\n         display: inline-block;\n         width: 19%;\n         float: right;\n         */\n}\n\n.footer_type2 .footer_social_icons ul {\n    float: right;\n}\n\n.footer_type2 .copyright_text {\n    border-top: 1px solid #e4e4e4;\n}\n\n.footer_type2 .copyright_text p {\n    margin-top: 26px;\n    text-align: left;\n    color: #616161;\n}\n\n.footer_type2 .footer_links ul {\n    text-align: center;\n}\n\n.footer_type2 .footer_links ul li a {\n    color: #616161;\n}\n\n.footer_type2 .footer_social_icons ul li a i {\n    color: #616161;\n}\n\n.footer_type2 .footer_social_icons ul li a i::before {\n    font-size: 20px;\n}\n\n.footer_type2 .footer_social_icons ul li a img {\n    max-height: 100%;\n}\n\n.footer_type2 .footer_social_icons ul li {\n    margin: 0 10px;\n    max-width: 30px;\n}        </style>\r\n            <div class=\"footer_prototype footer_type2\">\n    <!-- please make any changes to your footer after this line -->\n    <div class=\"footer_container\">\n        <div class=\"copyright_text\">\n            <p>\u00a9 Copyright&nbsp;2024&nbsp;ON24, Inc.<br>ON24 patents may apply \u2013 click&nbsp;<a data-cke-saved-href=\"https://www.on24.com/on24-virtual-patent-marking/\" href=\"https://www.on24.com/on24-virtual-patent-marking/\">here</a>&nbsp;for more information.<br>All rights reserved.</p>\n        </div>\n    </div>\n</div>    \r\n  </div>\r\n\r\n\r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n",
+    "title": "Email Statistics",
+    "permalink": "email-statistics",
+    "status": "1",
+    "topic_id": "3565136",
+    "folder_id": "142999",
+    "id": "3565136",
+    "good": "0",
+    "bad": "0",
+    "has_feedback": 1,
+    "topic_type": "0",
+    "topic_status": "1",
+    "topic_title": "Email Statistics",
+    "instructor_id": null,
+    "toc_name": "Email Statistics",
+    "toc_hidden": "0",
+    "size": "2297",
+    "rev_id": 0,
+    "content_tpl": null,
+    "modified_time": "Feb 24, 2025 01:22:24 PM",
+    "created_time": "Feb 19, 2025 01:19:58 PM",
+    "created_uid": "131125",
+    "modified_uid": "90331",
+    "published_uid": "90331",
+    "published_time": "1740403344",
+    "topic_fid": "0",
+    "canonical": "",
+    "callout": "0",
+    "callout_start": "",
+    "callout_end": "",
+    "template": "0",
+    "show_footer": "1",
+    "yammer_status": null,
+    "yammer_network": "",
+    "yammer_feed_id": "",
+    "logic_id": null,
+    "start_topic": "1906713",
+    "editable": true,
+    "toc_path": "/0/t;1906713/f;143002/f;142999",
+    "is_restrict_page": false,
+    "breadcrumb": "<ul class=\"breadcrumbs\"><li><a hqid=\"1906713\" href=\"/home\" class=\"breadcrumb-links\">ON24 REST API</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid=\"1906768\" href=\"/\" class=\"breadcrumb-links\">Analytics</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid=\"1906770\" href=\"/\" class=\"breadcrumb-links\">Event Level</a></li><li> <span>\u203a\u203a</span>Email Statistics</li></ul>",
+    "toc_sel_node": "3565136",
+    "project_id": 13630,
+    "fb": {
+      "tpl": "<div class=\"ui-page-fb\">\r\n  <div class=\"ui-fb-info-wrap\"> \r\n  <span class=\"ui-fb-info\">Was this information helpful?</span>\r\n  <div class=\"ui-fb-btns\">\r\n   <span class=\"ui-fb-good\"></span>\r\n   <span class=\"ui-fb-bad\"></span>\r\n  </div>  \r\n  </div>\r\n    <div class=\"ui-fb-form\">\r\n  <form onsubmit=\"return false;\">\r\n    <div class=\"ui-fb-form-header\">\r\n     <div class=\"ui-fbh-good\"><strong>Thank you</strong>. Do you want to add anything else?</div>\r\n     <div class=\"ui-fbh-bad\"><strong>Thank you</strong>. How can we improve this document?</div>\r\n    </div>\r\n    <div class=\"ui-fb-form-el\">\r\n    <div class=\"ui-fb-issues\"></div>\r\n     <div class=\"ui-fb-cmts\"></div>\r\n\t <div class=\"fb-text-warning\"> The maximum length for this field is 400</div>\r\n     <div class=\"ui-fb-email\"></div>\r\n    </div>\r\n    <div class=\"ui-fb-buttons\">\r\n      <div class=\"ui-fb-btn\"></div>\r\n      <div class=\"ui-fb-close\"><a href=\"javascript:;\">No thanks</a></div>\r\n    </div>\r\n  </div>\r\n  </form>\r\n    <div class=\"ui-fb-thanks feedback\">\r\n   <strong>Thank you</strong>. \r\n   Your feedback helps us to continually improve our content..\r\n      \t<a href=\"#\" class=\"ui-fb-more\">More feedback</a>\r\n     </div>\r\n</div>",
+      "email": 0,
+      "issues": [
+        {
+          "boxLabel": "Fix typos or links",
+          "key": "key_1"
+        },
+        {
+          "boxLabel": "Fix incorrect or incomplete information",
+          "key": "key_2"
+        },
+        {
+          "boxLabel": "I have a question",
+          "key": "key_3"
+        },
+        {
+          "boxLabel": "Add or update screenshots",
+          "key": "key_4"
+        },
+        {
+          "boxLabel": "Article too long",
+          "key": "key_5"
+        }
+      ],
+      "lang": {
+        "comment_here": "Enter comments",
+        "email_required": "Your email (required)",
+        "email_optional": "Your email (optional)",
+        "send": "Send",
+        "no_thanks": "No thanks",
+        "thank_you": "Thank you",
+        "add_more": "Do you want to add anything else?",
+        "help_improve": "Your feedback helps us to continually improve our content.",
+        "feedback_message": "How can we improve this document?",
+        "notice_message": "Was this information helpful?",
+        "no_more_feedback": false
+      },
+      "notice": true,
+      "single": false,
+      "feedback_type": "0",
+      "options": [
+        "Fix typos or links",
+        "Fix incorrect or incomplete information",
+        "I have a question",
+        "Add or update screenshots",
+        "Article too long"
+      ],
+      "icon_type": "0"
+    },
+    "page_scripts": null
+  },
+  "start_topic": "1906713",
+  "toc_path": "/0/1906713/f;143002/f;142999",
+  "scripts": [],
+  "plugins": [
+    "fb"
+  ],
+  "tooltip_tag": "0"
+}

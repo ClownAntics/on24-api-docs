@@ -1,0 +1,842 @@
+
+
+
+<div class="hiq-page-wrap">
+<div class="hiq-t-wrap">
+		
+  	  <div class="hiq-t ">
+				<ul class="breadcrumbs"><li><a hqid="1906713" href="/home" class="breadcrumb-links">ON24 REST API</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="1946253" href="/registration" class="breadcrumb-links">Registration</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="3382045" href="/seamless-registration-2" class="breadcrumb-links">Seamless Registration</a></li><li> <span>››</span>Seamless Registration Virtual Conference</li></ul>  	
+		<h3>&nbsp;</h3>
+
+<h3><span style="font-size:24px;"><strong>Seamless Registration Virtual Conference</strong></span></h3>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Seamless Registration is a service for pushing registrant data to&nbsp;Virtual Conferences. This service&nbsp;supports both the GET and POST HTTP methods.</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Registration API URL:</b></span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><a href="http://vshow.on24.com/vshow/%3cshowCode%3e/register">https://vshow.on24.com/vshow/&lt;showCode&gt;/register</a></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Required Parameters</b></span></span></p>
+
+<table border="0" cellpadding="0" cellspacing="0" style="width: 885px;" width="797">
+	<tbody>
+		<tr height="20">
+			<td height="20" style="width: 337px;" width="232"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">email</span></span></td>
+			<td style="width: 502px;" width="565"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">User email address</span></span></td>
+		</tr>
+		<tr height="20">
+			<td height="20" style="width: 337px;" width="232"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">password</span></span></td>
+			<td style="width: 502px;" width="565"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">User chosen password (if applicable)</span></span></td>
+		</tr>
+		<tr height="20">
+			<td height="20" style="width: 337px;" width="232"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">apiKey</span></span></td>
+			<td style="width: 502px;" width="565"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Preview password</span></span></td>
+		</tr>
+		<tr height="20">
+			<td height="20" style="width: 337px;" width="232"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">apiMode</span></span></td>
+			<td style="width: 502px;" width="565"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">If parameter provided, value always needs to be &ldquo;Y&rdquo;</span></span></td>
+		</tr>
+		<tr height="57">
+			<td height="57" style="width: 337px;" width="232"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">target</span></span></td>
+			<td style="width: 502px;" width="565"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">This URL parameter overrides the show lobby URL to redirect after successful registration. Only use if &ldquo;apiMode&rdquo; parameter is not&nbsp;passed or equal to &ldquo;N&rdquo;</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Optional&nbsp;Parameters</b></span></span></p>
+
+<table border="0" cellpadding="0" cellspacing="0" style="width: 885px;" width="785">
+	<tbody>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">firstName</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">lastName</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">company</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">jobTitle</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">jobFunction</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="34">
+			<td height="34" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">username</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Denotes screen name. Ideally this parameter should NOT be used, as the platform will generate a unique username based on the&nbsp;provided first name and last name.</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">addressStreet1</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">addressStreet2</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">city</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">state</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">zip</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">country</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">marketingEmail</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Y/N; Default value is &ldquo;N&rdquo;; Used for subscription and notfication</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">eventEmail</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Y/N; Default value is &ldquo;Y&rdquo;; If &ldquo;N&rdquo; then user will not receive reminder, attendee and no-show emails.</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">workPhone</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">homePhone</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">fax</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">companyIndustry</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">companySize</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">other</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">notes</span></span></td>
+			<td style="width: 503px;" width="542">&nbsp;</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">std1</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Custom field #1</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">std2</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Custom field #2</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">std3</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Custom field #3</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">std4</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Custom field #4</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">std5</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Custom field #5</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">std6</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Custom field #6</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">std7</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Custom field #7</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">std8</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Custom field #8</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">std9</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Custom field #9</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">std10</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Custom field #10</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">partnerref</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">String value signifying a code to track client campaigns</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">locale</span></span></td>
+			<td style="width: 503px;" width="542">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Locale/Language. To be used only if show supports multiple languages.</span></span></p>
+
+			<p>&nbsp;</p>
+
+			<ul>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">English = en</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">हिंदी: Hindi = hi</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Deutsch: German = de</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">English (British) = en_UK</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">English (United States) = en_US</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Espa&ntilde;ol: Spanish = es</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Espa&ntilde;ol: Spanish (Latin America) = es_MX</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Fijian = fj</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Fran&ccedil;ais: French = fr</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">French : Canada = fr_CA</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Indonesia: Indonesian l=id</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Italiano: Italian = it</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Nederlands: Dutch = nl</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Portugu&ecirc;s: Portuguese = pt</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Svenska: Swedish = sv_SE</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">T&uuml;rk&ccedil;e: Turkish l=tr</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">polski: Polish = pl</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Русский: Russian = ru</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">עברית: Hebrew = iw</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">العربية:Arabic l=ar</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">ภาษาไทย: Thai = th</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">中文 (简体): Chinese (Simplified) = zh_CN</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">中文 (繁體): Chinese (Traditional) = zh_TW</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">日本語: Japanese = ja</span></span></li>
+				<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">한국어: Korean l=ko</span></span></li>
+			</ul>
+
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">timezoneCode</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">If applicable, please click here for available time zone codes.</span></span></td>
+		</tr>
+		<tr height="34">
+			<td height="34" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">operatingSystem</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Operating system of the user through which the original registration happened. If this field is not provided then value of USER_AGENT&nbsp;header field would be used to deduce the operating system name.</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">browser</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Bowser used by the user at time of registration. If this field is not&nbsp;provided then value of USER_AGENT header field would be used to deduce the browser name.</span></span></td>
+		</tr>
+		<tr height="34">
+			<td height="34" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">eventUserIp</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">IP Address of the user. If this field is not provided then value of remote host header field would be used to get the IP address.</span></span></td>
+		</tr>
+		<tr height="51">
+			<td height="51" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">regPageId</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">To be used only if the show has multiple registration pages. Numeric value signifying which registration page the user&rsquo;s registration should be attributed. This value is as provided by Virtual Show Manager Registration Page setup. If no value is provide, system will assume&nbsp;the default registration page.</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">rc</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Role code parameter. Applicable for role feature enabled shows.</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">updateIfExists</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Y/N; Default value if the parameter is not passed is assumed to be &ldquo;N&rdquo;. When set to &ldquo;Y&rdquo;, the system will update an existing user record with the data in the request if a user is found with the same unique identifier.</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">setting_hideProfile</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Y/N. Hide user&rsquo;s profile to others when &ldquo;Y&rdquo;. If no value passed, set to show default value.</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">setting_notAvailableToAttendees</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Y/N. User not visible to other attendees when &ldquo;Y&rdquo;. If no value passed, set to show default value.</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">setting_notAvailableToShowStaff</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Y/N. User not visible to the Sponsor Reps when &ldquo;Y&rdquo;. If no value passed, set to show default value.</span></span></td>
+		</tr>
+		<tr height="17">
+			<td height="17" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">setting_messagesToExtEmail</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Y/N. User will get emails to their external email address as well asthe in-show email inbox if &ldquo;Y&rdquo;. If no value passed, set to show default value.</span></span></td>
+		</tr>
+		<tr height="34">
+			<td height="34" style="width: 222px;" width="243"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">setting_dontOpenWindowOnNewMessage</span></span></td>
+			<td style="width: 503px;" width="542"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Y/N. Controls whether or not to open a new window when someone sends a message. If no value passed, set to show default value.</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>First Time Registrants</b></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">If the system receives a registration request for a user whose information is not available in the data store (new registrant), the following steps are taken:</span></span></p>
+
+<p>&nbsp;</p>
+
+<ol>
+	<li>
+	<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Register the new user with the provided information.</span></span></p>
+	</li>
+	<li>
+	<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">On successful registration, send out a confirmation email.</span></span></p>
+	</li>
+	<li>
+	<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Creation an &ldquo;auth&rdquo; cookie which will be valid for 5 minutes. The XML response will contain the auth token value as shown below.</span></span></p>
+	</li>
+	<li>
+	<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">If the registration information includes tracking information for regPageId or partnerref, store this tracking information for the newly created user.</span></span></p>
+	</li>
+</ol>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Successful Registration Response</b></span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;response&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;status&gt;ok&lt;/status&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;token&gt;nON2KJA2kPb0Ixr0e0J71YWdKIm1Jmx%2FTYY6GKLVBKs%3D&lt;/token&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/response&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">If using a server POST, then the token needs to be passed as a request paramter appended to the show URLor lobby URL using the below format.</span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><a href="http://vshow.on24.com/vshow/%3cshowCode%3e?auth=%3ctokenValue%3e">https://vshow.on24.com/vshow/&lt;showCode&gt;?auth=&lt;tokenValue&gt;</a></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Existing Users</strong></span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">If the system receives a registration request for a user and based on the email provided, it determines the user is already a valid registrant, the following steps are taken:</span></span></p>
+
+<ol>
+	<li>
+	<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">If the user has already registered with the same regPageId, his/her next attempts will be ignored by the tracking system and no confirmation email will be sent.</span></span></p>
+	</li>
+	<li>
+	<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">If the user has already registered but the new request contains a new regPageId, a confirmation email will be sent from the new registration page.</span></span></p>
+	</li>
+	<li>
+	<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Send a response that the user is already registered along with the auth cookie creation and the auth token value.</span></span></p>
+	</li>
+	<li>
+	<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">If the registration information includes tracking information for regPageId or partnerref, store this tracking information for the newly created user.</span></span></p>
+	</li>
+</ol>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>User Already Registered</b></span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;response&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;status&gt;USER_ALREADY_REGISTERED&lt;/status&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;token&gt;nON2KJA2kPb0Ixr0e0J71aPpWQKiqcZmyIlLeLEKPtI%3D&lt;/token&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/response&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Registration Confirmation Email</strong></span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">A registration confirmation email is sent out for every valid registration attempt per regPageId. If a registration value already exists for a user with a given regPageId, then no confirmation email will be sent out. If the registration information does not contain regPageId parameter, the system will use the default registration page.</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Auto Login Token Generation API</strong></span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">This API is used to generate the token which will login the user automatically without being asked for the credentials again. This API creates the &ldquo;auth&rdquo; cookie as well as returns the token in the response. This token would be valid for approximately 5 minutes.</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>API URL:</b></span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><a href="http://vshow.on24.com/vshow/%3cshowCode%3e/token/generate">https://vshow.on24.com/vshow/&lt;showCode&gt;/token/generate</a></span></span></p>
+
+<p>&nbsp;</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td colspan="2" width="624">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Required Parameters</b></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="132">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">email</span></span></p>
+			</td>
+			<td width="492">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">User email; needs to be unique for the show</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="132">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">password</span></span></p>
+			</td>
+			<td width="492">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">User chosen password OR apiKey (show preview password)</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="132">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">apiMode</span></span></p>
+			</td>
+			<td width="492">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Y/N (If parameter not provided, default value = N)</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="132">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">target</span></span></p>
+			</td>
+			<td width="492">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">This URL parameter overrides the Lobby URL to redirect on successful registration. Required if apiMode = N.</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<table>
+	<tbody>
+		<tr>
+			<td colspan="2" width="624">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Other supported parameters</b></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="132">
+			<p>&nbsp;</p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">errorUrl</span></span></p>
+			</td>
+			<td width="492">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">escaped URL; applicable when apiMode=N; optional; redirected to errorUrl on failed login with an additional request parameter appended to errorUrl called &ldquo;errorCode&rdquo; Eg. errorCode=USER_NOT_REGISTERED or errorCode=INVALID_USER_PASSWORD.</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Successful Token Generation Response</b></span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;response&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;token&gt;nON2KJA2kPb0Ixr0e0J71aPpWQKiqcZmyIlLeLEKPtI%3D&lt;/token&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/response&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Error Messages</strong></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Email missing in registration information</b></span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;error&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;type&gt;GENERAL&lt;/type&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;message&gt;EMAIL_MISSING&lt;/message&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/error&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Registration not available </b>(archive expired or registration page expired)</span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;error&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;type&gt;GENERAL&lt;/type&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;message&gt;REGISTRATION_NOT_AVAILABLE&lt;/message&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/error&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Invalid Domain Access </b>(if show has white label domain and access attempt not from that domain)</span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;error&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;type&gt;VALIDATION&lt;/type&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;message&gt;INVALID_DOMAIN_ACCESS&lt;/message&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/error&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Unsecured access </b>(if show configured as a secure show and attempted access via http)</span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;error&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;type&gt;VALIDATION&lt;/type&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;message&gt;UNSECURED_ACCESS&lt;/message&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/error&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Unauthorized IP</b></span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;error&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;type&gt;VALIDATION&lt;/type&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;message&gt;UNAUTHORIZED_IP&lt;/message&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/error&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Unauthorized Referrer</b></span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;error&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;type&gt;VALIDATION&lt;/type&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;message&gt;UNAUTHORIZED_REFERER&lt;/message&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/error&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Unauthorized Reg Email </b>(User registers with email domain which is blocked for the show)</span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;error&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;type&gt;VALIDATION&lt;/type&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;message&gt;UNAUTHORIZED_REG_EMAIL&lt;/message&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/error&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>User Email who is not registered for this show.</b></span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;error&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;type&gt;VALIDATION&lt;/type&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;message&gt;USER_NOT_REGISTERED&lt;/message&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/error&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Invalid Password Provided</b></span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;error&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;type&gt;VALIDATION&lt;/type&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;message&gt;INVALID_USER_PASSWORD&lt;/message&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/error&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Invalid API Key</b></span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;error&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;type&gt;VALIDATION&lt;/type&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;message&gt;INVALID_API_KEY&lt;/message&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/error&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><b>Invalid password and Invalid API key provided</b></span></span></p>
+
+<table width="100%">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;error&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;type&gt;VALIDATION&lt;/type&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;message&gt;VALID_API_KEY_OR_PASSWORD_REQUIRED&lt;/message&gt;</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&lt;/error&gt;</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+	  </div>
+ </div>
+ <div id="ui-page-fb-wrap"></div>
+ <div class="hiq-footer-wrap">
+    
+              <style>
+          .footer_type2 .footer_container {
+    flex: 1;
+}
+
+.footer_type2 a {
+    text-decoration: none;
+}
+
+.footer_type2 .links_block {
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+}
+
+.footer_prototype.footer_type2 {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    height: 250px;
+    display: flex;
+}
+
+.footer_type2 .footer_links ul {
+    display: block;
+    float: left;
+}
+
+.footer_type2 .footer_links ul li {
+    display: inline-block;
+    margin: 0 20px 0 0px;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+.footer_type2 .footer_social_icons ul {
+    margin: auto;
+    display: block;
+}
+
+.footer_type2 .footer_links {
+    display: block;
+    flex: 7;
+    position: relative;
+    right: 0;
+    /*
+         display: inline-block;
+         width: 100%;
+         */
+}
+
+.footer_type2 .footer_social_icons {
+    display: block;
+    flex: 7;
+    position: relative;
+    /*
+         display: inline-block;
+         width: 19%;
+         float: right;
+         */
+}
+
+.footer_type2 .footer_social_icons ul {
+    float: right;
+}
+
+.footer_type2 .copyright_text {
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer_type2 .copyright_text p {
+    margin-top: 26px;
+    text-align: left;
+    color: #616161;
+}
+
+.footer_type2 .footer_links ul {
+    text-align: center;
+}
+
+.footer_type2 .footer_links ul li a {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i::before {
+    font-size: 20px;
+}
+
+.footer_type2 .footer_social_icons ul li a img {
+    max-height: 100%;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    margin: 0 10px;
+    max-width: 30px;
+}        </style>
+            <div class="footer_prototype footer_type2">
+    <!-- please make any changes to your footer after this line -->
+    <div class="footer_container">
+        <div class="copyright_text">
+            <p>© Copyright&nbsp;2024&nbsp;ON24, Inc.<br>ON24 patents may apply – click&nbsp;<a data-cke-saved-href="https://www.on24.com/on24-virtual-patent-marking/" href="https://www.on24.com/on24-virtual-patent-marking/">here</a>&nbsp;for more information.<br>All rights reserved.</p>
+        </div>
+    </div>
+</div>    
+  </div>
+
+
+</div>
+
+
+
+
+

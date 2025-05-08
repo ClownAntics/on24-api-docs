@@ -1,0 +1,385 @@
+
+
+
+<div class="hiq-page-wrap">
+<div class="hiq-t-wrap">
+		
+  	  <div class="hiq-t ">
+				<ul class="breadcrumbs"><li><a hqid="1906713" href="/home" class="breadcrumb-links">ON24 REST API</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="1907633" href="/event-management" class="breadcrumb-links">Event Management</a></li><li> <span>››</span>Update Email Notification</li></ul>  	
+		<h3><span style="font-size:24px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>/v2/client/{clientId}/event/{eventId}/email/{emailId}</strong></span></span></h3>
+
+<h3 style="margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 24px; font-weight: bold; line-height: 40px; font-family: Helvetica, Tahoma, sans-serif; color: rgb(51, 51, 51); text-rendering: optimizeLegibility;"><span style="font-size:24px;"><span style="font-family:Arial,Helvetica,sans-serif;">METHOD: PUT</span></span></h3>
+
+<p style="margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Helvetica, Tahoma, sans-serif; font-size: 15px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Updates an Email Notification for a particular event.</span></span></p>
+
+<h4 style="margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 18px; font-weight: bold; font-family: Helvetica, Tahoma, sans-serif; line-height: 20px; color: rgb(51, 51, 51); text-rendering: optimizeLegibility;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Parameters:</span></span></h4>
+
+<table>
+	<thead>
+		<tr>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Name</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Located&nbsp;in</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Required</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Description</span></span></th>
+			<th style="width: 127px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Default</span></span></th>
+			<th style="width: 67px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Schema</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Example</span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong style="font-style: inherit;">clientId</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">path</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The client id</span></span></td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">15448</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong style="font-family: &quot;Open Sans&quot;, arial, sans-serif; font-style: inherit;">eventId</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">path</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The event id</span></span></td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">1487542</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong style="font-family: &quot;Open Sans&quot;, arial, sans-serif; font-style: inherit; background-color: rgb(249, 249, 249);">emailId</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">path</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">yes</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">The email id</span></span></span></td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">-</span></span></span></td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">string</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">7055969</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong style="font-style: inherit;">accessTokenKey</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">client access token key</span></span></td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">63129107067A520E6B7DE18D5E1CB2BF</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong style="font-style: inherit;">accessTokenSecret</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">client access token secret</span></span></td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td style="margin: 0px; padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; border-bottom-right-radius: 4px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">072639740ac239333e3708a1623b9de3590d972e6b1060071b726ecfd9b216001b45391717d9fbeb780438</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>content-type</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="color: rgb(51, 51, 51);">Possible values: &quot;application/x-www-form-urlencoded&quot;&nbsp;or</span><br style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, arial, sans-serif; font-size: 15px;" />
+			<span style="color: rgb(51, 51, 51);">&ldquo;multipart/formdata&quot;</span></span></span></td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td style="margin: 0px; padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; border-bottom-right-radius: 4px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="color: rgb(51, 51, 51); background-color: rgb(249, 249, 249);">&quot;application/x-www-form-urlencoded&quot;</span></span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong style="font-family: &quot;Open Sans&quot;, arial, sans-serif; font-style: inherit; background-color: rgb(249, 249, 249);">activated</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Indicates if the email notification is active or not.</span></span></td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">-</span></span></span>
+			<p>&nbsp;</p>
+			</td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">string</span></span></span></td>
+			<td style="margin: 0px; padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; border-bottom-right-radius: 4px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Y</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>whentosend</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">When to send the email notification</span></span></td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">-</span></span></span></td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td style="margin: 0px; padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; border-bottom-right-radius: 4px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">1 Day Before Event</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>goodafter</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">formData</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">no</span></span></span></td>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">specifies the <a href="http://apidoc.on24.com/date-parameters-format">date and time</a> on which the notification should be sent</span></span></p>
+			</td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">-</span></span></span></td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td style="margin: 0px; padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; border-bottom-right-radius: 4px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">2018-11-02T09:00:00<span style="white-space: pre;">-07:00</span></span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>fromlabel</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">formData</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">no</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The from label that will display in addition to the standard from address of &lt;<a href="mailto:do_not_reply@on24event.com" title="Follow link">do_not_reply@on24event.com</a>&gt;</span></span></td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Webcast</span></span></td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td style="margin: 0px; padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; border-bottom-right-radius: 4px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">ON24Webcast</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>replyto</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">formData</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">no</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">email notification reply to</span></span></td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">-</span></span></span></td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td style="margin: 0px; padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; border-bottom-right-radius: 4px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">do_not_reply@on24events.com</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>subject</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">formData</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">no</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">email notification subject</span></span></span></td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">-</span></span></span></td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">string</span></span></span></td>
+			<td style="margin: 0px; padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; border-bottom-right-radius: 4px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Reminder - #EVENTTITLE#</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>body</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">formData</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">no</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">email notification body</span></span></span></td>
+			<td style="width: 123px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">-</span></span></span></td>
+			<td style="width: 64px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">string</span></span></span></td>
+			<td style="margin: 0px; padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; border-bottom-right-radius: 4px;">
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Thank you for registering for #EVENTTITLE#. Save this email for details on the webcast.</span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p style="margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 18px; font-weight: bold; font-family: Helvetica, Tahoma, sans-serif; line-height: 20px; color: rgb(51, 51, 51); text-rendering: optimizelegibility;">&nbsp;</p>
+
+<p style="margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 18px; font-weight: bold; font-family: Helvetica, Tahoma, sans-serif; line-height: 20px; color: rgb(51, 51, 51); text-rendering: optimizelegibility;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Notes:</span></span></p>
+
+<ul>
+	<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>fromLabel </strong>validations:</span></span>
+
+	<ul>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Only alphanumeric characters and a&nbsp;maximum&nbsp;of 50 characters are allowed.</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">International characters or email addresses are not allowed.</span></span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>whentosend </strong>accepted values:</span></span>
+	<ul>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">2 Weeks Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">1 Week Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">5 Days Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Days Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">2 Days Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">1 Day Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">12 Hours Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">6 Hours Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">5 Hours Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">4 Hours Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">3 Hours Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">2 Hours Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">1 Hour Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">30 Minutes Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">15 Minutes Before Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">1 Hour After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">2 Hours After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">3 Hours After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">4 Hours After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">5 Hours After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">6 Hours After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">12 Hours After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">1 Day After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">2 Days After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">3 Days After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">5 Days After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">1 Week After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">2 Weeks After Event</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">When Event Starts</span></span></li>
+		<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Custom Date And Time</span></span></li>
+	</ul>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h4 style="margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 18px; font-weight: bold; font-family: Helvetica, Tahoma, sans-serif; line-height: 20px; color: rgb(51, 51, 51); text-rendering: optimizeLegibility;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Response:</span></span></h4>
+
+<p style="margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Helvetica, Tahoma, sans-serif; font-size: 15px;">Content-Type: application/json, application/xml, text/plain</p>
+
+<table>
+	<thead>
+		<tr>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Status Code</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Reason</span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">200</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Email Notification Updated</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">401</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">AccessTokenKey and AccessTokenSecret are wrong or invalid.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">You do not have permission to perform the requested operation.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">You have reached the maximum number of calls for this api.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The client id {clientId} is inactive.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The event id {eventId} is inactive.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">404</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The client {clientId} doesn&#39;t exist.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">404</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The event {eventId} doesn&#39;t exist</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">404</span></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="background-color: rgb(249, 249, 249);">The email {emailId} doesn&#39;t exist</span></span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Please see the <a hqid="2465791" href="/api-throttling">throttling </a>page for&nbsp;limits with this endpoint.</strong></span></span></p>
+
+	  </div>
+ </div>
+ <div id="ui-page-fb-wrap"></div>
+ <div class="hiq-footer-wrap">
+    
+              <style>
+          .footer_type2 .footer_container {
+    flex: 1;
+}
+
+.footer_type2 a {
+    text-decoration: none;
+}
+
+.footer_type2 .links_block {
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+}
+
+.footer_prototype.footer_type2 {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    height: 250px;
+    display: flex;
+}
+
+.footer_type2 .footer_links ul {
+    display: block;
+    float: left;
+}
+
+.footer_type2 .footer_links ul li {
+    display: inline-block;
+    margin: 0 20px 0 0px;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+.footer_type2 .footer_social_icons ul {
+    margin: auto;
+    display: block;
+}
+
+.footer_type2 .footer_links {
+    display: block;
+    flex: 7;
+    position: relative;
+    right: 0;
+    /*
+         display: inline-block;
+         width: 100%;
+         */
+}
+
+.footer_type2 .footer_social_icons {
+    display: block;
+    flex: 7;
+    position: relative;
+    /*
+         display: inline-block;
+         width: 19%;
+         float: right;
+         */
+}
+
+.footer_type2 .footer_social_icons ul {
+    float: right;
+}
+
+.footer_type2 .copyright_text {
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer_type2 .copyright_text p {
+    margin-top: 26px;
+    text-align: left;
+    color: #616161;
+}
+
+.footer_type2 .footer_links ul {
+    text-align: center;
+}
+
+.footer_type2 .footer_links ul li a {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i::before {
+    font-size: 20px;
+}
+
+.footer_type2 .footer_social_icons ul li a img {
+    max-height: 100%;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    margin: 0 10px;
+    max-width: 30px;
+}        </style>
+            <div class="footer_prototype footer_type2">
+    <!-- please make any changes to your footer after this line -->
+    <div class="footer_container">
+        <div class="copyright_text">
+            <p>© Copyright&nbsp;2024&nbsp;ON24, Inc.<br>ON24 patents may apply – click&nbsp;<a data-cke-saved-href="https://www.on24.com/on24-virtual-patent-marking/" href="https://www.on24.com/on24-virtual-patent-marking/">here</a>&nbsp;for more information.<br>All rights reserved.</p>
+        </div>
+    </div>
+</div>    
+  </div>
+
+
+</div>
+
+
+
+
+

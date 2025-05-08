@@ -1,0 +1,185 @@
+
+
+
+<div class="hiq-page-wrap">
+<div class="hiq-t-wrap">
+		
+  	  <div class="hiq-t ">
+				<ul class="breadcrumbs"><li><a hqid="1906713" href="/home" class="breadcrumb-links">ON24 REST API</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="3382044" href="/references" class="breadcrumb-links">API Overview</a></li><li> <span>››</span>Rolling Interval</li></ul>  	
+		<h3><span style="font-size:24px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Rolling Interval</strong></span></span></h3>
+
+<p><span style="font-size:14px;">API endpoints that allow filtering&nbsp;by date or time&nbsp;provide support for retrieving results based on a rolling period according to the following rules:</span></p>
+
+<ul>
+	<li><span style="font-size:14px;">Calls can include&nbsp;<strong>dateInterval</strong>, <strong>dateIntervalOffset </strong>and <strong>dateIntervalTimezone</strong>.</span></li>
+	<li><span style="font-size:14px;"><strong>dateInterval </strong>will&nbsp;determine the number of days returned in a response.</span></li>
+	<li><span style="font-size:14px;"><strong>dateIntervalOffset </strong>will determine the number of days from which the interval should encompass.</span></li>
+	<li><span style="font-size:14px;"><strong>dateIntervalTimezone </strong>will be the timezone to be used for determining the 24 hour period that constitutes a day.</span></li>
+	<li><span style="font-size:14px;">For example, &lsquo;dateInterval=30&dateIntervalOffset=4&dateIntervalTimezone=America/Los_Angeles&rsquo; would return 30 days of data starting from 4 days ago.</span></li>
+	<li><span style="font-size:14px;">All parameters are optional. Passing <strong>dateIntervalOffset </strong>or <strong>dateIntervalTimezone</strong> without also including <strong>dateInterval</strong> will result in an error response.</span></li>
+	<li><span style="font-size:14px;">Values for <strong>dateInterval </strong>and <strong>dateIntervalOffset </strong>must be equal or greater than zero.&nbsp;<strong>dateInterval </strong>can not exceed 180. <strong>dateIntervalTimezone </strong>value must be one of the supported timezones values (e.g. timezone values returned via the <a href="http://apidoc.on24.com/timezones" target="_blank">Retrieve Timezones Codes</a> helper endpoint). Passing invalid values will result in an error response.</span></li>
+	<li><span style="font-size:14px;">Passing dateIntervalOffset=0 or not including dateIntervalOffset will mean no offset.</span></li>
+	<li><span style="font-size:14px;">Default timezone (if dateIntervalTimezone is not passed) will result in returning <strong>America/Los_Angeles</strong>.</span></li>
+	<li><span style="font-size:14px;">Including <strong>dateInterval </strong>AND <strong>startDate</strong>/<strong>endDate </strong>in the same request will result in an error response.</span></li>
+	<li><span style="font-size:14px;"><strong>dateInterval </strong>can be used in conjunction with <strong>dateFilterMode</strong>.</span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="color:#000000;"><strong>Response error codes:</strong></span></span></p>
+
+<table class="table table-striped table-bordered" style="border-collapse: separate; font-family: Helvetica, Tahoma, sans-serif; border-left: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-top-color: rgb(221, 221, 221); border-right-color: rgb(221, 221, 221); border-bottom-color: rgb(221, 221, 221); max-width: 100%; width: auto; margin-bottom: 20px; border-radius: 4px; color: rgb(51, 51, 51); font-size: 15px;">
+	<thead>
+		<tr>
+			<th style="padding: 8px; border-top: 0px; border-left-color: rgb(221, 221, 221); line-height: 20px; vertical-align: bottom; border-top-left-radius: 4px;"><span style="font-size:14px;"><strong><font color="#3d3d3d"><span style="font-weight: normal;">Status Code</span></font></strong></span></th>
+			<th style="padding: 8px; border-top: 0px; border-left-color: rgb(221, 221, 221); line-height: 20px; vertical-align: bottom;"><span style="font-size:14px;"><strong><font color="#3d3d3d"><span style="font-weight: normal;">Reason</span></font></strong></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; background-color: rgb(249, 249, 249);"><span style="font-size:14px;"><font color="#3d3d3d">400</font></span></td>
+			<td style="padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; background-color: rgb(249, 249, 249);"><span style="font-size:14px;"><font color="#3d3d3d">dateInterval is required when passing dateInterfalOffset or dateIntervalTimezone.</font></span></td>
+		</tr>
+		<tr>
+			<td style="padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; background-color: rgb(249, 249, 249);"><span style="font-size:14px;"><span style="color: rgb(61, 61, 61); background-color: rgb(249, 249, 249);">400</span></span></td>
+			<td style="padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; background-color: rgb(249, 249, 249);"><span style="font-size:14px;"><span style="color: rgb(61, 61, 61); background-color: rgb(249, 249, 249);">Invalid dateIntervalTimezone.</span></span></td>
+		</tr>
+		<tr>
+			<td style="padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; background-color: rgb(249, 249, 249);"><span style="font-size:14px;"><span style="color: rgb(61, 61, 61); background-color: rgb(249, 249, 249);">400</span></span></td>
+			<td style="padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; background-color: rgb(249, 249, 249);"><span style="font-size:14px;"><font color="#3d3d3d">dateInterval range must be between 1 and 180 inclusive</font>.</span></td>
+		</tr>
+		<tr>
+			<td style="padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; background-color: rgb(249, 249, 249);"><span style="font-size:14px;"><span style="color: rgb(61, 61, 61); background-color: rgb(249, 249, 249);">400</span></span></td>
+			<td style="padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; background-color: rgb(249, 249, 249);"><span style="font-size:14px;"><font color="#3d3d3d">dateIntervalOffset must be a number.</font></span></td>
+		</tr>
+		<tr>
+			<td style="padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; background-color: rgb(249, 249, 249);"><span style="font-size:14px;"><span style="color: rgb(61, 61, 61); background-color: rgb(249, 249, 249);">400</span></span></td>
+			<td style="padding: 8px; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); line-height: 20px; background-color: rgb(249, 249, 249);"><span style="font-size:14px;">Start/End date filters cannot be sent with Interval filters.</span></td>
+		</tr>
+	</tbody>
+</table>
+
+	  </div>
+ </div>
+ <div id="ui-page-fb-wrap"></div>
+ <div class="hiq-footer-wrap">
+    
+              <style>
+          .footer_type2 .footer_container {
+    flex: 1;
+}
+
+.footer_type2 a {
+    text-decoration: none;
+}
+
+.footer_type2 .links_block {
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+}
+
+.footer_prototype.footer_type2 {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    height: 250px;
+    display: flex;
+}
+
+.footer_type2 .footer_links ul {
+    display: block;
+    float: left;
+}
+
+.footer_type2 .footer_links ul li {
+    display: inline-block;
+    margin: 0 20px 0 0px;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+.footer_type2 .footer_social_icons ul {
+    margin: auto;
+    display: block;
+}
+
+.footer_type2 .footer_links {
+    display: block;
+    flex: 7;
+    position: relative;
+    right: 0;
+    /*
+         display: inline-block;
+         width: 100%;
+         */
+}
+
+.footer_type2 .footer_social_icons {
+    display: block;
+    flex: 7;
+    position: relative;
+    /*
+         display: inline-block;
+         width: 19%;
+         float: right;
+         */
+}
+
+.footer_type2 .footer_social_icons ul {
+    float: right;
+}
+
+.footer_type2 .copyright_text {
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer_type2 .copyright_text p {
+    margin-top: 26px;
+    text-align: left;
+    color: #616161;
+}
+
+.footer_type2 .footer_links ul {
+    text-align: center;
+}
+
+.footer_type2 .footer_links ul li a {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i::before {
+    font-size: 20px;
+}
+
+.footer_type2 .footer_social_icons ul li a img {
+    max-height: 100%;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    margin: 0 10px;
+    max-width: 30px;
+}        </style>
+            <div class="footer_prototype footer_type2">
+    <!-- please make any changes to your footer after this line -->
+    <div class="footer_container">
+        <div class="copyright_text">
+            <p>© Copyright&nbsp;2024&nbsp;ON24, Inc.<br>ON24 patents may apply – click&nbsp;<a data-cke-saved-href="https://www.on24.com/on24-virtual-patent-marking/" href="https://www.on24.com/on24-virtual-patent-marking/">here</a>&nbsp;for more information.<br>All rights reserved.</p>
+        </div>
+    </div>
+</div>    
+  </div>
+
+
+</div>
+
+
+
+
+

@@ -1,0 +1,240 @@
+
+
+
+<div class="hiq-page-wrap">
+<div class="hiq-t-wrap">
+		
+  	  <div class="hiq-t ">
+				<ul class="breadcrumbs"><li><a hqid="1906713" href="/home" class="breadcrumb-links">ON24 REST API</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="1906772" href="/helper-endpoints" class="breadcrumb-links">Helper Endpoints</a></li><li> <span>››</span>Retrieve Registration Fields</li></ul>  	
+		<h3><strong><span style="font-size:24px;">/v2/client/{clientId}/event/{eventId}/regfield</span></strong></h3>
+
+<h3><strong><span style="font-size:24px;">METHOD: GET</span></strong></h3>
+
+<p><span style="font-size:14px;">Retrieves registration field information for a particular event</span></p>
+
+<p><strong><span style="font-size:14px;">Parameters:</span></strong></p>
+
+<table border="1" cellpadding="1" cellspacing="1">
+	<thead>
+		<tr>
+			<th scope="col"><span style="font-size:14px;"><strong>Name</strong></span></th>
+			<th scope="col"><span style="font-size:14px;"><strong>Location</strong></span></th>
+			<th scope="col"><span style="font-size:14px;"><strong>Required</strong></span></th>
+			<th scope="col"><span style="font-size:14px;"><strong>Description</strong></span></th>
+			<th scope="col"><span style="font-size:14px;"><strong>Default</strong></span></th>
+			<th scope="col"><span style="font-size:14px;"><strong>Format</strong></span></th>
+			<th scope="col"><span style="font-size:14px;"><strong>Example</strong></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span style="font-size:14px;"><strong>clientId</strong></span></td>
+			<td><span style="font-size:14px;">path</span></td>
+			<td><span style="font-size:14px;">yes</span></td>
+			<td><span style="font-size:14px;">The client ID for the request</span></td>
+			<td><span style="font-size:14px;">-</span></td>
+			<td><span style="font-size:14px;">number</span></td>
+			<td><span style="font-size:14px;">18901</span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><strong>eventId</strong></span></td>
+			<td><span style="font-size:14px;">path</span></td>
+			<td><span style="font-size:14px;">yes</span></td>
+			<td><span style="font-size:14px;">The event ID for the request</span></td>
+			<td><span style="font-size:14px;">-</span></td>
+			<td><span style="font-size:14px;">number</span></td>
+			<td><span style="font-size:14px;">421891</span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><strong>accept</strong></span></td>
+			<td><span style="font-size:14px;">header</span></td>
+			<td><span style="font-size:14px;">no</span></td>
+			<td><span style="font-size:14px;">Output format: Application/xml or Application/json</span></td>
+			<td><span style="font-size:14px;"><span style="font-family: &quot;Open Sans&quot;, arial, sans-serif; background-color: rgb(249, 249, 249);">application/json</span></span></td>
+			<td><span style="font-size:14px;">string</span></td>
+			<td><span style="font-size:14px;"><span style="font-family: &quot;Open Sans&quot;, arial, sans-serif; background-color: rgb(249, 249, 249);">application/json</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><strong>accessTokenKey</strong></span></td>
+			<td><span style="font-size:14px;">header</span></td>
+			<td><span style="font-size:14px;">yes</span></td>
+			<td><span style="font-size:14px;">Security parameter</span></td>
+			<td><span style="font-size:14px;">-</span></td>
+			<td><span style="font-size:14px;">string</span></td>
+			<td><span style="font-size:14px;">63129107067A520E6B7DE18D5E1CB2BF</span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><strong>accessTokenSecret</strong></span></td>
+			<td><span style="font-size:14px;">header</span></td>
+			<td><span style="font-size:14px;">yes</span></td>
+			<td><span style="font-size:14px;">Security parameter</span></td>
+			<td><span style="font-size:14px;">-</span></td>
+			<td><span style="font-size:14px;">string</span></td>
+			<td><span style="font-size:14px;">072639740ac239333e3708a1623b9de3590d972e6b1060071b726ecfd9b21600</span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><strong><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Response:</span></span></strong></p>
+
+<p><span style="font-size:14px;">Content-Type:&nbsp;application/json, application/xml</span></p>
+
+<table>
+	<thead>
+		<tr>
+			<th><span style="font-size:14px;">Status Code</span></th>
+			<th><span style="font-size:14px;">Reason</span></th>
+			<th><span style="font-size:14px;">Response Model</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span style="font-size:14px;">401</span></td>
+			<td><span style="font-size:14px;">The access token secret or access token key was not found</span></td>
+			<td><span style="font-size:14px;">-</span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;">403</span></td>
+			<td><span style="font-size:14px;">The client id is not an Elite user/The adminId can not perform operations under client clientId; or<br />
+			You reached the maximum number of calls for this endpoint</span></td>
+			<td><span style="font-size:14px;">-<br />
+			&nbsp; &nbsp; &nbsp;</span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;">404</span></td>
+			<td><span style="font-size:14px;">The event id is not found under this client account</span></td>
+			<td><span style="font-size:14px;">-</span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><strong>Please see the <a hqid="2465791" href="/api-throttling">throttling </a>page for limits with this endpoint.</strong></span></p>
+
+	  </div>
+ </div>
+ <div id="ui-page-fb-wrap"></div>
+ <div class="hiq-footer-wrap">
+    
+              <style>
+          .footer_type2 .footer_container {
+    flex: 1;
+}
+
+.footer_type2 a {
+    text-decoration: none;
+}
+
+.footer_type2 .links_block {
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+}
+
+.footer_prototype.footer_type2 {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    height: 250px;
+    display: flex;
+}
+
+.footer_type2 .footer_links ul {
+    display: block;
+    float: left;
+}
+
+.footer_type2 .footer_links ul li {
+    display: inline-block;
+    margin: 0 20px 0 0px;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+.footer_type2 .footer_social_icons ul {
+    margin: auto;
+    display: block;
+}
+
+.footer_type2 .footer_links {
+    display: block;
+    flex: 7;
+    position: relative;
+    right: 0;
+    /*
+         display: inline-block;
+         width: 100%;
+         */
+}
+
+.footer_type2 .footer_social_icons {
+    display: block;
+    flex: 7;
+    position: relative;
+    /*
+         display: inline-block;
+         width: 19%;
+         float: right;
+         */
+}
+
+.footer_type2 .footer_social_icons ul {
+    float: right;
+}
+
+.footer_type2 .copyright_text {
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer_type2 .copyright_text p {
+    margin-top: 26px;
+    text-align: left;
+    color: #616161;
+}
+
+.footer_type2 .footer_links ul {
+    text-align: center;
+}
+
+.footer_type2 .footer_links ul li a {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i::before {
+    font-size: 20px;
+}
+
+.footer_type2 .footer_social_icons ul li a img {
+    max-height: 100%;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    margin: 0 10px;
+    max-width: 30px;
+}        </style>
+            <div class="footer_prototype footer_type2">
+    <!-- please make any changes to your footer after this line -->
+    <div class="footer_container">
+        <div class="copyright_text">
+            <p>© Copyright&nbsp;2024&nbsp;ON24, Inc.<br>ON24 patents may apply – click&nbsp;<a data-cke-saved-href="https://www.on24.com/on24-virtual-patent-marking/" href="https://www.on24.com/on24-virtual-patent-marking/">here</a>&nbsp;for more information.<br>All rights reserved.</p>
+        </div>
+    </div>
+</div>    
+  </div>
+
+
+</div>
+
+
+
+
+

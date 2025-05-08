@@ -1,0 +1,318 @@
+
+
+
+<div class="hiq-page-wrap">
+<div class="hiq-t-wrap">
+		
+  	  <div class="hiq-t ">
+				<ul class="breadcrumbs"><li><a hqid="1906713" href="/home" class="breadcrumb-links">ON24 REST API</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="1907633" href="/event-management" class="breadcrumb-links">Event Management</a></li><li> <span>››</span>Create Survey Questions and Answers</li></ul>  	
+		<h3><strong><span style="font-size:24px;"><span style="font-family:Arial,Helvetica,sans-serif;">/v2/client/{clientId}/event/{eventid}/surveyquestions</span></span></strong></h3>
+
+<h3><strong><span style="font-size:24px;"><span style="font-family:Arial,Helvetica,sans-serif;">METHOD: POST</span></span></strong></h3>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Creates one or several survey questions&nbsp;and their answers for a particular webinar.</span></span></p>
+
+<h4><strong><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Parameters:</span></span></strong></h4>
+
+<table>
+	<tbody>
+		<tr>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Name</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Located in</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Required</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Description</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Default</span></span></th>
+			<th style="width: 82px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Schema</span></span></th>
+			<th style="width: 816px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Example</span></span></th>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>clientId</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">path</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The client id</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td style="width: 79px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td style="width: 812px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">18091</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>eventId</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">path</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The event id</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td style="width: 79px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td style="width: 812px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">13658130</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>accessTokenKey</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">client access token key</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td style="width: 79px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td style="width: 812px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">63129107067A520E6B7DE18D5E1CB2BF</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>accessTokenSecret</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">client access token secret</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td style="width: 79px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td style="width: 812px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">072639740ac239333e3708a1623b9de3590d972e6b1060071b726ecfd9b216001b45391717d9fbeb780438</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>content-type</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">It must be either &ldquo;application/x-www-form-urlencoded&quot; or &quot;application/json&quot; depending on the preferred way to send the metadata object: as a formData parameter or as the request body.</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td style="width: 79px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td style="width: 812px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">&quot;application/x-www-form-urlencoded&quot;</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>metadata</strong></span></span></td>
+			<td>
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">formData</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">or</span></span></p>
+
+			<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">requestBody</span></span></p>
+			</td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">JSON object containing all the survey questions data. It can be sent as a formData parameter using Content-Type = &quot;application/x-www-form-urlencoded&quot; or as the request body using Content-Type = &quot;application/json&quot;.</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td style="width: 79px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">JSON</span></span></td>
+			<td style="width: 812px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">{<br />
+			&nbsp;&nbsp; &nbsp;&quot;surveyquestions&quot;: [<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;{<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;questiontype&quot;: &quot;multioption&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;required&quot;: &quot;Y&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;question&quot;: &quot;What industry are you in?&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;surveyanswers&quot;: [<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;Technology&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;HealthCare&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;Finance&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;Retail&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;Food & Beverage&quot;<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;]<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;},<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;{<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;questiontype&quot;: &quot;singleoption&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;required&quot;: &quot;N&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;question&quot;: &quot;Would you like a 1:1 session with an expert?&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;surveyanswers&quot;: [<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;Yes&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;No&quot;<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;]<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;},<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;{<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;questiontype&quot;: &quot;singletext&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;required&quot;: &quot;N&quot;,<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&quot;question&quot;: &quot;Describe yourself&quot;<br />
+			&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;}<br />
+			&nbsp;&nbsp; &nbsp;]<br />
+			}</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><strong><span style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Notes:</span></strong></p>
+
+<ul>
+	<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">A Take Survey&nbsp;widget must already exist&nbsp;in the webinar. If a Take Survey widget does not exist, a 404 response will be returned.</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p style="color: rgb(51, 51, 51); font-family: Helvetica, Tahoma, sans-serif; font-size: 15px; margin-bottom: 10px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="color: rgb(51, 51, 51); font-weight: 700;">Response:</span></span></span></p>
+
+<p style="color: rgb(51, 51, 51); font-family: Helvetica, Tahoma, sans-serif; font-size: 15px; margin-bottom: 10px;">Content-Type: application/json</p>
+
+<table>
+	<thead>
+		<tr>
+			<th style="font-weight: normal; margin-top: 0px; margin-right: 0px; margin-left: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Status Code</span></span></th>
+			<th style="font-weight: normal; margin-top: 0px; margin-right: 0px; margin-left: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Reason</span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">200</span></span></td>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Questions created.</span></span></td>
+		</tr>
+		<tr>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">400</span></span></td>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Invalid metadata.</span></span></td>
+		</tr>
+		<tr>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">401</span></span></td>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">AccessTokenKey and AccessTokenSecret are wrong or invalid.</span></span></td>
+		</tr>
+		<tr>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">401</span></span></td>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">You do not have permission to perform the requested operation.</span></span></td>
+		</tr>
+		<tr>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">You do not have permission to perform the requested operation.</span></span></td>
+		</tr>
+		<tr>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">You have reached the maximum number of calls for this api.</span></span></td>
+		</tr>
+		<tr>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The client id {clientId} is inactive.</span></span></td>
+		</tr>
+		<tr>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The event {eventId} is inactive.</span></span></td>
+		</tr>
+		<tr>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">404</span></span></td>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The client {clientId} doesn&#39;t exist.&nbsp;</span></span></td>
+		</tr>
+		<tr>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">404</span></span></td>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The event {eventId} doesn&#39;t exist.</span></span></td>
+		</tr>
+		<tr>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">404</span></span></td>
+			<td style="margin: 0px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The Take Survey widget is not available for this event.</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Please see the <a hqid="2465791" href="/api-throttling">throttling </a>page for limits with this endpoint.</strong></span></span></p>
+
+<div>&nbsp;</div>
+
+	  </div>
+ </div>
+ <div id="ui-page-fb-wrap"></div>
+ <div class="hiq-footer-wrap">
+    
+              <style>
+          .footer_type2 .footer_container {
+    flex: 1;
+}
+
+.footer_type2 a {
+    text-decoration: none;
+}
+
+.footer_type2 .links_block {
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+}
+
+.footer_prototype.footer_type2 {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    height: 250px;
+    display: flex;
+}
+
+.footer_type2 .footer_links ul {
+    display: block;
+    float: left;
+}
+
+.footer_type2 .footer_links ul li {
+    display: inline-block;
+    margin: 0 20px 0 0px;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+.footer_type2 .footer_social_icons ul {
+    margin: auto;
+    display: block;
+}
+
+.footer_type2 .footer_links {
+    display: block;
+    flex: 7;
+    position: relative;
+    right: 0;
+    /*
+         display: inline-block;
+         width: 100%;
+         */
+}
+
+.footer_type2 .footer_social_icons {
+    display: block;
+    flex: 7;
+    position: relative;
+    /*
+         display: inline-block;
+         width: 19%;
+         float: right;
+         */
+}
+
+.footer_type2 .footer_social_icons ul {
+    float: right;
+}
+
+.footer_type2 .copyright_text {
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer_type2 .copyright_text p {
+    margin-top: 26px;
+    text-align: left;
+    color: #616161;
+}
+
+.footer_type2 .footer_links ul {
+    text-align: center;
+}
+
+.footer_type2 .footer_links ul li a {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i::before {
+    font-size: 20px;
+}
+
+.footer_type2 .footer_social_icons ul li a img {
+    max-height: 100%;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    margin: 0 10px;
+    max-width: 30px;
+}        </style>
+            <div class="footer_prototype footer_type2">
+    <!-- please make any changes to your footer after this line -->
+    <div class="footer_container">
+        <div class="copyright_text">
+            <p>© Copyright&nbsp;2024&nbsp;ON24, Inc.<br>ON24 patents may apply – click&nbsp;<a data-cke-saved-href="https://www.on24.com/on24-virtual-patent-marking/" href="https://www.on24.com/on24-virtual-patent-marking/">here</a>&nbsp;for more information.<br>All rights reserved.</p>
+        </div>
+    </div>
+</div>    
+  </div>
+
+
+</div>
+
+
+
+
+

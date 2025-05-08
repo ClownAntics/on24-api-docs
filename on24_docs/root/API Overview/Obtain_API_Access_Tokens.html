@@ -1,0 +1,228 @@
+
+
+
+<div class="hiq-page-wrap">
+<div class="hiq-t-wrap">
+		
+  	  <div class="hiq-t ">
+				<ul class="breadcrumbs"><li><a hqid="1906713" href="/home" class="breadcrumb-links">ON24 REST API</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="3382044" href="/references" class="breadcrumb-links">API Overview</a></li><li> <span>››</span>How to upload file</li></ul>  	
+		<h3><span style="font-size:24px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong><span style="color:#4d4d4d;"><span id="docs-internal-guid-dabddb59-2298-da7b-b0e8-a71ef707124f"><span style="background-color: transparent; font-weight: 700; vertical-align: baseline;">Obtaining API Access Tokens</span></span></span></strong></span></span></h3>
+
+<p><span style="font-size:14px;"><span style="color: rgb(38, 50, 56);">Login to the ON24 platform to generate the&nbsp;</span>Token Key, Token Secret, and Client ID for use with the ON24 REST API.</span></p>
+
+<p>&nbsp;</p>
+
+<ol>
+	<li><span style="font-size:14px;">Log In to ON24</span></li>
+	<li><span style="font-size:14px;">Go to <strong>Platform Tools &gt; Integrations &gt; API Tokens</strong></span></li>
+	<li><span style="font-size:14px;">Click on the <strong>Provision a New API Access&nbsp;Token</strong>&nbsp;button. This will generate the Token Key and Token Secret, as well as show the Client ID for use with the API. If you see a delay in the credentials displaying, please try refreshing the page.</span></li>
+</ol>
+
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; margin-left: 40px;">&nbsp;</p>
+
+<p style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; margin-left: 40px;"><img height="782" src="https://dzf8vqv24eqhg.cloudfront.net/userfiles/291/13630/ckfinder/images/qu/2024/Screenshot_at_Nov_25_14-48-42.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kemY4dnF2MjRlcWhnLmNsb3VkZnJvbnQubmV0L3VzZXJmaWxlcy8yOTEvMTM2MzAvY2tmaW5kZXIvaW1hZ2VzL3F1LzIwMjQvU2NyZWVuc2hvdF9hdF9Ob3ZfMjVfMTQtNDgtNDIucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzQ2NzAzMzY1fX19XX0_&Signature=OtRogLq-ZReHFQUOgCbkpusBZtBlNjSatCtI6t3fMRiBkz84QKVZuEOzxkGas2tagqIxhzva2cKdknhB74xiZwanK2OFoULEsTMnI37RzONaFm~2ncQVDzmUKzsiJPEVWBtxv1HTecSXhCA1dgTNpYCF04AsYEFNCO2HghnxwLmArRFQ40QJQ43S14fx8~bT7Jk1x3X8LSOCl14yXCh08ddpyer4Tvgvv~0G7ZZDSX2zh9-lRC8Kx6ORTFQFkbhVAWAh8NRFnGYkr4akFd0DrGpaYwIleBC~Z1rXl8aF2t0X5wEwwEikY-9Ul7tDtwTQxKpYYF5Gyv3JLa1Y99qyRQ__&Key-Pair-Id=K2TK3EG287XSFC" style="width: 947px; height: 540px;" width="1370" /></p>
+
+<h3>&nbsp;</h3>
+
+<h3><strong>API Access Levels</strong></h3>
+
+<p><span style="font-size:14px;">ON24 provides granular endpoint access per token, and every token can have multiple access levels or have full access to all endpoints.</span></p>
+
+<p><span style="font-size:14px;">Access Level Options:</span></p>
+
+<ul>
+	<li><span style="font-size:14px;"><strong>All endpoints</strong></span></li>
+	<li><span style="font-size:14px;"><strong>Event Management endpoints</strong></span>
+	<ul>
+		<li><span style="font-size:14px;">Create a Webinar</span></li>
+		<li><span style="font-size:14px;">Copy a Webinar</span></li>
+		<li><span style="font-size:14px;">Update a Webinar</span></li>
+		<li><span style="font-size:14px;">Delete a Webinar</span></li>
+		<li><span style="font-size:14px;">Update Email Notification</span></li>
+		<li><span style="font-size:14px;">Update Email Calendar Reminder</span></li>
+	</ul>
+	</li>
+</ul>
+
+<ul>
+	<li><span style="font-size:14px;"><strong>Account-level Analytics endpoints</strong></span>
+
+	<ul>
+		<li><span style="font-size:14px;">Event Listing</span></li>
+		<li><span style="font-size:14px;">Engaged Accounts</span></li>
+		<li><span style="font-size:14px;">Sub-Clients</span></li>
+		<li><span style="font-size:14px;">Client-Level Registrants</span></li>
+		<li><span style="font-size:14px;">Registrant (by email)</span></li>
+		<li><span style="font-size:14px;">Leads</span></li>
+		<li><span style="font-size:14px;">Client-Level Attendees</span></li>
+		<li><span style="font-size:14px;">Attendee (by email)</span></li>
+		<li><span style="font-size:14px;">Presenters</span></li>
+		<li><span style="font-size:14px;">User Questions</span></li>
+		<li><span style="font-size:14px;">PEP</span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:14px;"><strong>Event-level Analytics endpoints</strong></span>
+	<ul>
+		<li><span style="font-size:14px;">Metadata & Usage</span></li>
+		<li><span style="font-size:14px;">Registrants</span></li>
+		<li><span style="font-size:14px;">Attendees</span></li>
+		<li><span style="font-size:14px;">Resources Viewed</span></li>
+		<li><span style="font-size:14px;">Surveys</span></li>
+		<li><span style="font-size:14px;">Polls</span></li>
+		<li><span style="font-size:14px;">Attendee Viewing Sessions</span></li>
+		<li><span style="font-size:14px;">Presenters</span></li>
+		<li><span style="font-size:14px;">Email Notification Details</span></li>
+		<li><span style="font-size:14px;">Email Calendar Reminder</span></li>
+		<li><span style="font-size:14px;">Engagement Hub Content Listing</span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:14px;"><strong>Registration endpoints</strong></span>
+	<ul>
+		<li><span style="font-size:14px;">REST Registration</span></li>
+		<li><span style="font-size:14px;">Forget Registrant (Client-Level)</span></li>
+		<li><span style="font-size:14px;">Forget All Registrant (Client-Level)</span></li>
+		<li><span style="font-size:14px;">Forget All Registrant (Event-Level)</span></li>
+		<li><span style="font-size:14px;">Update Registrant (Client-Level)</span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:14px;"><strong>Helper endpoints</strong></span>
+	<ul>
+		<li><span style="font-size:14px;">Retrieve Language Codes</span></li>
+		<li><span style="font-size:14px;">Retrieve Timezones Codes</span></li>
+		<li><span style="font-size:14px;">Retrieve Event Types</span></li>
+		<li><span style="font-size:14px;">Retrieve Signal Contacts</span></li>
+		<li><span style="font-size:14px;">Retrieve Event Profiles</span></li>
+		<li><span style="font-size:14px;">Retrieve Event Managers</span></li>
+		<li><span style="font-size:14px;">Retrieve Account Managers</span></li>
+		<li><span style="font-size:14px;">Retrieve Sales Rep Contacts</span></li>
+		<li><span style="font-size:14px;">Retrieve Technical Rep Contacts</span></li>
+		<li><span style="font-size:14px;">Retrieve Registration Fields</span></li>
+		<li><span style="font-size:14px;">Replacement Tokens</span></li>
+	</ul>
+	</li>
+</ul>
+
+	  </div>
+ </div>
+ <div id="ui-page-fb-wrap"></div>
+ <div class="hiq-footer-wrap">
+    
+              <style>
+          .footer_type2 .footer_container {
+    flex: 1;
+}
+
+.footer_type2 a {
+    text-decoration: none;
+}
+
+.footer_type2 .links_block {
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+}
+
+.footer_prototype.footer_type2 {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    height: 250px;
+    display: flex;
+}
+
+.footer_type2 .footer_links ul {
+    display: block;
+    float: left;
+}
+
+.footer_type2 .footer_links ul li {
+    display: inline-block;
+    margin: 0 20px 0 0px;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+.footer_type2 .footer_social_icons ul {
+    margin: auto;
+    display: block;
+}
+
+.footer_type2 .footer_links {
+    display: block;
+    flex: 7;
+    position: relative;
+    right: 0;
+    /*
+         display: inline-block;
+         width: 100%;
+         */
+}
+
+.footer_type2 .footer_social_icons {
+    display: block;
+    flex: 7;
+    position: relative;
+    /*
+         display: inline-block;
+         width: 19%;
+         float: right;
+         */
+}
+
+.footer_type2 .footer_social_icons ul {
+    float: right;
+}
+
+.footer_type2 .copyright_text {
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer_type2 .copyright_text p {
+    margin-top: 26px;
+    text-align: left;
+    color: #616161;
+}
+
+.footer_type2 .footer_links ul {
+    text-align: center;
+}
+
+.footer_type2 .footer_links ul li a {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i::before {
+    font-size: 20px;
+}
+
+.footer_type2 .footer_social_icons ul li a img {
+    max-height: 100%;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    margin: 0 10px;
+    max-width: 30px;
+}        </style>
+            <div class="footer_prototype footer_type2">
+    <!-- please make any changes to your footer after this line -->
+    <div class="footer_container">
+        <div class="copyright_text">
+            <p>© Copyright&nbsp;2024&nbsp;ON24, Inc.<br>ON24 patents may apply – click&nbsp;<a data-cke-saved-href="https://www.on24.com/on24-virtual-patent-marking/" href="https://www.on24.com/on24-virtual-patent-marking/">here</a>&nbsp;for more information.<br>All rights reserved.</p>
+        </div>
+    </div>
+</div>    
+  </div>
+
+
+</div>
+
+
+
+
+

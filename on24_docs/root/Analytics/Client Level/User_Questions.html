@@ -1,0 +1,271 @@
+
+
+
+<div class="hiq-page-wrap">
+<div class="hiq-t-wrap">
+		
+  	  <div class="hiq-t ">
+				<ul class="breadcrumbs"><li><a hqid="1906713" href="/home" class="breadcrumb-links">ON24 REST API</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="1906768" href="/analytics" class="breadcrumb-links">Analytics</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="1907445" href="/by-account-client" class="breadcrumb-links">Client Level</a></li><li> <span>››</span>Client-Level User Questions</li></ul>  	
+		<h3 style="margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 30px; font-weight: bold; font-family: Helvetica, Tahoma, sans-serif; color: rgb(51, 51, 51); text-rendering: optimizeLegibility;"><span style="font-size:24px;"><span style="font-family:Arial,Helvetica,sans-serif;">/v2/client/{clientId}/userquestions</span></span></h3>
+
+<h3 style="margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 24px; font-weight: bold; line-height: 40px; font-family: Helvetica, Tahoma, sans-serif; color: rgb(51, 51, 51); text-rendering: optimizeLegibility;"><span style="font-size:24px;"><span style="font-family:Arial,Helvetica,sans-serif;">METHOD: GET</span></span></h3>
+
+<p style="margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Helvetica, Tahoma, sans-serif; font-size: 15px;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Returns a listing of&nbsp;user questions for a particular client. </span></span></p>
+
+<h4 style="margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 18px; font-weight: bold; font-family: Helvetica, Tahoma, sans-serif; line-height: 20px; color: rgb(51, 51, 51); text-rendering: optimizeLegibility;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Parameters:</span></span></h4>
+
+<table>
+	<tbody>
+		<tr>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Name</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Located&nbsp;in</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Required</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Description</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Default</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Schema</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Example</span></span></th>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>clientId</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">path</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The client id</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">15448</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>excludesubaccounts</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">query</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">if set to &quot;Y&quot;, sub-accounts will be excluded</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">N</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Y</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>emailFilter</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">query</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Limit the questions returned to only those from specific domains</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><span style="color: rgb(51, 51, 51);">microsoft.com|intel.com|ba.com</span></span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>startDate</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">query</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Limit the results to those occurring after this <a hqid="1906761" href="/date-parameters-format">date/time</a></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">5 minutes ago</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">only ISO format: YYYY-MM-DDThh:mm:ssXXX</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">2012-05-19T12:00:00-05:00</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>endDate</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">query</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">limit the results to those occurring before this <a hqid="1906761" href="/date-parameters-format">date/time</a></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">now</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">only ISO format:&nbsp;YYYY-MM-DDThh:mm:ssXXX</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">2012-05-19T12:00:00-05:00</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>accessTokenKey</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">client access token key</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">63129107067A520E6B7DE18D5E1CB2BF</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>accessTokenSecret</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">client access token secret</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">072639740ac239333e3708a1623b9de3590d972e6b1060071b726ecfd9b216001b45391717d9fbeb780438</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<h4 style="margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 18px; font-weight: bold; font-family: Helvetica, Tahoma, sans-serif; line-height: 20px; color: rgb(51, 51, 51); text-rendering: optimizeLegibility;">&nbsp;</h4>
+
+<h4 style="margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 18px; font-weight: bold; font-family: Helvetica, Tahoma, sans-serif; line-height: 20px; color: rgb(51, 51, 51); text-rendering: optimizeLegibility;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Notes:</span></span></h4>
+
+<ul>
+	<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Real-time API endpoint that returns the info for the last 5 minutes</span></span></li>
+	<li><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The maximum duration for the <strong>startDate</strong> and <strong>endDate </strong>interval is 1 hour.</span></span></li>
+</ul>
+
+<h4 style="margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 18px; font-weight: bold; font-family: Helvetica, Tahoma, sans-serif; line-height: 20px; color: rgb(51, 51, 51); text-rendering: optimizeLegibility;">&nbsp;</h4>
+
+<h4 style="margin-top: 15px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 18px; font-weight: bold; font-family: Helvetica, Tahoma, sans-serif; line-height: 20px; color: rgb(51, 51, 51); text-rendering: optimizeLegibility;"><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Response:</span></span></h4>
+
+<p style="margin-bottom: 10px; color: rgb(51, 51, 51); font-family: Helvetica, Tahoma, sans-serif; font-size: 15px;">Content-Type: application/json, application/xml, text/plain</p>
+
+<table>
+	<thead>
+		<tr>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Status Code</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Reason</span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">200</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Return list of user questions</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">400</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">the startDate and endDate are more than 1 hour apart.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">401</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">AccessTokenKey and AccessTokenSecret are wrong or invalid.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">You do not have permission to perform the requested operation.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">You have reached the maximum number of calls for this api.</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">404</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The client {clientId} doesn&#39;t exist.</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><strong>Please see the <a hqid="2465791" href="/api-throttling">throttling </a>page for limits with this endpoint.</strong></span></p>
+
+	  </div>
+ </div>
+ <div id="ui-page-fb-wrap"></div>
+ <div class="hiq-footer-wrap">
+    
+              <style>
+          .footer_type2 .footer_container {
+    flex: 1;
+}
+
+.footer_type2 a {
+    text-decoration: none;
+}
+
+.footer_type2 .links_block {
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+}
+
+.footer_prototype.footer_type2 {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    height: 250px;
+    display: flex;
+}
+
+.footer_type2 .footer_links ul {
+    display: block;
+    float: left;
+}
+
+.footer_type2 .footer_links ul li {
+    display: inline-block;
+    margin: 0 20px 0 0px;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+.footer_type2 .footer_social_icons ul {
+    margin: auto;
+    display: block;
+}
+
+.footer_type2 .footer_links {
+    display: block;
+    flex: 7;
+    position: relative;
+    right: 0;
+    /*
+         display: inline-block;
+         width: 100%;
+         */
+}
+
+.footer_type2 .footer_social_icons {
+    display: block;
+    flex: 7;
+    position: relative;
+    /*
+         display: inline-block;
+         width: 19%;
+         float: right;
+         */
+}
+
+.footer_type2 .footer_social_icons ul {
+    float: right;
+}
+
+.footer_type2 .copyright_text {
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer_type2 .copyright_text p {
+    margin-top: 26px;
+    text-align: left;
+    color: #616161;
+}
+
+.footer_type2 .footer_links ul {
+    text-align: center;
+}
+
+.footer_type2 .footer_links ul li a {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i::before {
+    font-size: 20px;
+}
+
+.footer_type2 .footer_social_icons ul li a img {
+    max-height: 100%;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    margin: 0 10px;
+    max-width: 30px;
+}        </style>
+            <div class="footer_prototype footer_type2">
+    <!-- please make any changes to your footer after this line -->
+    <div class="footer_container">
+        <div class="copyright_text">
+            <p>© Copyright&nbsp;2024&nbsp;ON24, Inc.<br>ON24 patents may apply – click&nbsp;<a data-cke-saved-href="https://www.on24.com/on24-virtual-patent-marking/" href="https://www.on24.com/on24-virtual-patent-marking/">here</a>&nbsp;for more information.<br>All rights reserved.</p>
+        </div>
+    </div>
+</div>    
+  </div>
+
+
+</div>
+
+
+
+
+

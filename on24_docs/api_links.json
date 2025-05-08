@@ -1,0 +1,26 @@
+[
+  {
+    "title": "API Overview",
+    "url": "https://apidoc.on24.com/references"
+  },
+  {
+    "title": "Analytics",
+    "url": "https://apidoc.on24.com/analytics"
+  },
+  {
+    "title": "Registration",
+    "url": "https://apidoc.on24.com/registration"
+  },
+  {
+    "title": "Event Management",
+    "url": "https://apidoc.on24.com/event-management"
+  },
+  {
+    "title": "Content Listings",
+    "url": "https://apidoc.on24.com/content-listings"
+  },
+  {
+    "title": "Helper Endpoints",
+    "url": "https://apidoc.on24.com/helper-endpoints"
+  }
+]

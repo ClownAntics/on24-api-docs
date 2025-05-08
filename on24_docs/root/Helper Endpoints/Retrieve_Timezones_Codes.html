@@ -1,0 +1,224 @@
+
+
+
+<div class="hiq-page-wrap">
+<div class="hiq-t-wrap">
+		
+  	  <div class="hiq-t ">
+				<ul class="breadcrumbs"><li><a hqid="1906713" href="/home" class="breadcrumb-links">ON24 REST API</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="1906772" href="/helper-endpoints" class="breadcrumb-links">Helper Endpoints</a></li><li> <span>››</span>Timezones</li></ul>  	
+		<h3><span style="font-size:24px;"><strong><span style="font-family:Arial,Helvetica,sans-serif;">/v2/client/{clientId}/timezones</span></strong></span></h3>
+
+<h3><span style="font-size:24px;"><strong><span style="font-family:Arial,Helvetica,sans-serif;">METHOD: GET</span></strong></span></h3>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Retrieves time zones for the given client account</span></span></p>
+
+<p><strong><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Parameters:</span></span></strong></p>
+
+<table border="1">
+	<tbody>
+		<tr>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Name</strong></span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Location</strong></span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Required</strong></span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Description</strong></span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Default</strong></span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Schema</strong></span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Example</strong></span></span></th>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>clientId</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">path</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The time zones will be retrieved based on the client id</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">18091</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>accept</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">no</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Output format. possible values: Application/xml or Application/json</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">application/json</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">application/json</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>accessTokenKey</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">client access token key</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">63129107067A520E6B7DE18D5E1CB2BF</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>accessTokenSecret</strong></span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">header</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">yes</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">client access token secret</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">string</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">072639740ac239333e3708a1623b9de3590d972e6b1060071b726ecfd9b21600</span></span></td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><strong><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Response:</span></span></strong></p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Content-Type:&nbsp;application/json, application/xml</span></span></p>
+
+<table>
+	<thead>
+		<tr>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Status Code</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Reason</span></span></th>
+			<th><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">Response Model</span></span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">401</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The access token secret or access token key was not found</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">403</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">The client id is not an Elite user/The adminId can not perform operations under client clientId; or<br />
+			You reached the maximum number of calls for this endpoint</span></span></td>
+			<td><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;">-</span></span><br />
+			&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:14px;"><span style="font-family:Arial,Helvetica,sans-serif;"><strong>Please see the <a hqid="2465791" href="/api-throttling">throttling </a>page for limits with this endpoint.</strong></span></span></p>
+
+	  </div>
+ </div>
+ <div id="ui-page-fb-wrap"></div>
+ <div class="hiq-footer-wrap">
+    
+              <style>
+          .footer_type2 .footer_container {
+    flex: 1;
+}
+
+.footer_type2 a {
+    text-decoration: none;
+}
+
+.footer_type2 .links_block {
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+}
+
+.footer_prototype.footer_type2 {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    height: 250px;
+    display: flex;
+}
+
+.footer_type2 .footer_links ul {
+    display: block;
+    float: left;
+}
+
+.footer_type2 .footer_links ul li {
+    display: inline-block;
+    margin: 0 20px 0 0px;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+.footer_type2 .footer_social_icons ul {
+    margin: auto;
+    display: block;
+}
+
+.footer_type2 .footer_links {
+    display: block;
+    flex: 7;
+    position: relative;
+    right: 0;
+    /*
+         display: inline-block;
+         width: 100%;
+         */
+}
+
+.footer_type2 .footer_social_icons {
+    display: block;
+    flex: 7;
+    position: relative;
+    /*
+         display: inline-block;
+         width: 19%;
+         float: right;
+         */
+}
+
+.footer_type2 .footer_social_icons ul {
+    float: right;
+}
+
+.footer_type2 .copyright_text {
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer_type2 .copyright_text p {
+    margin-top: 26px;
+    text-align: left;
+    color: #616161;
+}
+
+.footer_type2 .footer_links ul {
+    text-align: center;
+}
+
+.footer_type2 .footer_links ul li a {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i::before {
+    font-size: 20px;
+}
+
+.footer_type2 .footer_social_icons ul li a img {
+    max-height: 100%;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    margin: 0 10px;
+    max-width: 30px;
+}        </style>
+            <div class="footer_prototype footer_type2">
+    <!-- please make any changes to your footer after this line -->
+    <div class="footer_container">
+        <div class="copyright_text">
+            <p>© Copyright&nbsp;2024&nbsp;ON24, Inc.<br>ON24 patents may apply – click&nbsp;<a data-cke-saved-href="https://www.on24.com/on24-virtual-patent-marking/" href="https://www.on24.com/on24-virtual-patent-marking/">here</a>&nbsp;for more information.<br>All rights reserved.</p>
+        </div>
+    </div>
+</div>    
+  </div>
+
+
+</div>
+
+
+
+
+

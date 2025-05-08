@@ -1,0 +1,685 @@
+
+
+
+<div class="hiq-page-wrap">
+<div class="hiq-t-wrap">
+		
+  	  <div class="hiq-t ">
+				<ul class="breadcrumbs"><li><a hqid="1906713" href="/home" class="breadcrumb-links">ON24 REST API</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="1946253" href="/registration" class="breadcrumb-links">Registration</a></li><li><span>&rsaquo;&rsaquo;</span><a hqid="3382045" href="/seamless-registration-2" class="breadcrumb-links">Seamless Registration</a></li><li> <span>››</span>Seamless Registration Webcasts</li></ul>  	
+		<p>&nbsp;</p>
+
+<h3><span style="font-family:Arial,Helvetica,sans-serif;"><strong><span style="font-size:24px;">Seamless Registration Webcasts</span></strong></span></h3>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"><span style="color: rgb(0, 0, 0); vertical-align: baseline;">Seamless Registration is a service for pushing registrant data to </span>Elite<span style="color: rgb(0, 0, 0); vertical-align: baseline;">. This service&nbsp;supports both the GET and POST HTTP methods.</span></span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"><b>Best Practices</b></span></span></p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">The simplest approach&nbsp;is to redirect users to ON24 once they&rsquo;ve finished filling out a registration page on a third party site. Users will see&nbsp;an ON24 hosted &ldquo;Thank you for registering, this event will start on&hellip;.&rdquo; Lobby page, and an ON24 cookie is saved that serves as the persistent storage to identify the user. With the cookie present, clicking on the Audience URL will&nbsp;bypass&nbsp;the ON24 login/registration page. You also have the option of having ON24 automatically redirect to a generic third party hosted &ldquo;thank you for registering&rdquo; page instead, by passing a URL in the optional &ldquo;lobby&rdquo; parameter.</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">To see an example of a Seamless Registration page, <a href="https://event.on24.com/clients/wcc/kristyn/myregform.html" target="_blank" title="https://event.on24.com/clients/wcc/kristyn/myregform.html"><b>click here</b></a>.</span></span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"><b>Note:</b> Be sure the Enable Registration<b> </b>and Enable Login Only Option checkboxes are checked to use Seamless Registration. You can find the checkboxes under &quot;Options&quot; on the webinar&#39;s registration page.</span></span></p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"><img height="103" src="https://dzf8vqv24eqhg.cloudfront.net/userfiles/291/13630/ckfinder/images/qu/enable_login_only(1).png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kemY4dnF2MjRlcWhnLmNsb3VkZnJvbnQubmV0L3VzZXJmaWxlcy8yOTEvMTM2MzAvY2tmaW5kZXIvaW1hZ2VzL3F1L2VuYWJsZV9sb2dpbl9vbmx5KDEpLnBuZyIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0NjcwMzQ3M319fV19&Signature=iCdMxYHnncYJF~Lv92EfjghLD6TXY7nuLLfFw5EDB1jDj~OoLLNHdQO7CTlRmw-FFkYGCkNacz6bkByeJBDzcoSEs8IKGPrQKWpc6t2kypQhD-hhp4m47zoLkJc19zcfiXz4cC59LC2a~vsyPjpZ2SrItsd3nVSoiBx0F2d1gFp9-J12rLWweC7MtpHew-HU2TAE-9aXysExrbXgcWcltogrHPgoSG1Gex2wmCO~thhFbhla62m2FZxb3ED3HyuyKryjZTiSkuxGD80kql1K~et~HItKVYIv1oI6V3GuyZ9F0nZ5O1lHWghb1YoyiSyAXPZ~fn582~P6nJf~Vwx-aQ__&Key-Pair-Id=K2TK3EG287XSFC" width="223" /></span></span></p>
+
+<p>&nbsp;</p>
+
+<hr />
+<p><span style="font-size:14px;"><span style="font-family: Arial, Helvetica, sans-serif;"><b>Parameter Notes</b></span></span></p>
+
+<p><span style="font-size:14px;"><span style="font-family: Arial, Helvetica, sans-serif;">Below you&rsquo;ll find the fields that can be passed to the ON24 registration database. Please note the following:</span></span></p>
+
+<ul>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">The parameter names are case-sensitive.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">You may have changed the display label of the field, but the underlying parameter name is always retained and should be referenced when passing registration data to ON24.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Associate the fields with the correct parameter name (e.g.&nbsp;pass the attendee&rsquo;s first name in the &quot;firstname&quot;&nbsp;field rather than in some other field).</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">If the data you want to store is not in one of the named demographic fields, use the custom fields std1-std10.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Any values sent which exceed the designated character limit will be truncated.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Records containing the email address of a registrant who is already in the database for this webcast will be updated with the latest values being sent.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">The webcast&rsquo;s unique <b>eventid </b>and <b>key </b>parameters must be included regardless of the method you use to send the Registrant data. These values are contained within the Audience URL:&nbsp;<a href="http://event.on24.com/wcc/r/1007892/39C070333A328199706BA21244AD8641?partnerref=campaign1" target="_blank" title="http://event.on24.com/wcc/r/1007892/39C070333A328199706BA21244AD8641?partnerref=campaign1">https://event.on24.com/wcc/r/<strong>eventid</strong>/</a><strong><a href="https://event.on24.com/wcc/r/eventid/key">key</a></strong></span></span></li>
+</ul>
+
+<p style="margin-left: 40px;"><span style="font-size:14px;"><span style="color:#000000;"><span style="vertical-align: baseline;"><a href="https://event.on24.com/wcc/r/eventid/key"><strong><img height="825" src="https://dzf8vqv24eqhg.cloudfront.net/userfiles/291/13630/ckfinder/images/qu/2694/image.png?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9kemY4dnF2MjRlcWhnLmNsb3VkZnJvbnQubmV0L3VzZXJmaWxlcy8yOTEvMTM2MzAvY2tmaW5kZXIvaW1hZ2VzL3F1LzI2OTQvaW1hZ2UucG5nIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzQ2NzAzNDczfX19XX0_&Signature=FIwX6W8SFFPUGMW-cwJvA6OTPKRV1ZtwCxcxjyNDsKzInhsytr0W~A7G5xO09i1eebHLoTb0ZyOMmh0YT3nPtEM6qcUwyYUa1PntUuwres8hcn4Hra5oK1olnMKG9O~Gtki20Bk7Qe2Ts4XbG-ql11vsVGN4gKTgAx8--EUnGjWlQd9vS836~FCoCylbpkirrVZHAa1U~auHKHszjQ-p8OEWPm915AYckEBiD6oTC79YZfCGBZQJehOPqqSZm2gl5V8vGxLKZHOA0s68A84vs7SgPufnb853kxNq7iLVuITVydDnCbhs1zhzM3Qn2sOC2oh3daUsNKfzJXhZUbv0CA__&Key-Pair-Id=K2TK3EG287XSFC" style="width: 771px; height: 480px;" width="1324" /></strong></a></span></span></span></p>
+
+<p style="margin-left: 40px;">&nbsp;</p>
+
+<hr />
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><strong><span style="font-size:14px;">Parameters</span></strong></span></p>
+
+<table style="width: 813px;" width="648">
+	<tbody>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"><b>Parameter Name</b></span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"><b>Maximum Characters</b></span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"><b>Default Display Label</b></span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"><b>Business Rules</b></span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">firstname</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">First Name</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">lastname</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Last Name</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">email</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Email</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Email format validation</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">company</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Company</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">job_title</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Title</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">job_function</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Job Function</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">address_street1</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Street Address 1</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">address_street2</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Street Address 2</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">city</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">City</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">state</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">State</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">zip</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Postal Code</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">country</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Country</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">work_phone</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Work Phone</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">company_industry</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Industry</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">company_size</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Company Size</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">event_email</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">1</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Opt Out Event</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Valid values:&nbsp;</span><span style="font-size:14px;">Y or N</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">marketing_email</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">1</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Opt Out Marketing</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Valid values:&nbsp;</span><span style="font-size:14px;">Y or N</span></span></p>
+			</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">partnerref</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">partnerref</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">std1</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Custom Field #1</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">std2</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Custom Field #2</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">std3</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Custom Field #3</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">std4</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Custom Field #4</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">std5</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Custom Field #5</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">std6</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Custom Field #6</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">std7</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Custom Field #7</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">std8</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Custom Field #8</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">std9</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Custom Field #9</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">std10</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Custom Field #10</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">utm_campaign</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">UTM Campaign</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">utm_content</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">UTM Content</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">utm_medium</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">UTM Medium</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">utm_source</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">UTM Source</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">utm_term</span></span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">100</span></span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">UTM Term</span></span></p>
+			</td>
+			<td style="width: 230px;" width="189">
+			<p>&nbsp;</p>
+			</td>
+		</tr>
+		<tr>
+			<td width="192">
+			<p><span style="font-size:14px;">attendee_type</span></p>
+			</td>
+			<td style="width: 148px;" width="88">
+			<p><span style="font-size:14px;">100</span></p>
+			</td>
+			<td style="width: 152px;" width="172">
+			<p><span style="font-size:14px;">Hybrid registration type</span></p>
+			</td>
+			<td style="width: 230px;" width="189">
+			<p><span style="font-size:14px;">Valid values:&nbsp;Virtual or In-Person</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<hr />
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"><b>HTTP GET Method</b></span></span></p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">The GET method relies on JavaScript redirection, which requires a web browser. This method will fail if used for server-to-server requests.&nbsp;Note the below additional information:</span></span></p>
+
+<ul>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">If any of the parameters include the SPACE character, it must be defined using URL encoding i.e. &quot; &quot;, (eg, &country=United States). Some special characters embedded within the field values, like &quot;=&quot;, &quot;&&quot; etc., should also always be encoded.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">It is recommended that you add the&nbsp;<strong>deletecookie=true</strong> parameter to avoid issues with users regsitering for the same event on one machine.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Example URL:&nbsp;<a href="https://event.on24.com/interface/registration/autoreg/index.html?eventid=XXXXX&key=XXXXXXXXXXXXXXXXXXX&firstname=John&lastname=Smith&email=john.smith@abc.com&company=ABC">https://event.on24.com/interface/registration/autoreg/index.html?eventid=XXXXX&key=XXXXXXXXXXXXXXXXXXX&deletecookie=true&firstname=John&lastname=Smith&email=john.smith@abc.com&company=ABC</a></span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">If you are having trouble with the standard HTTPS GET URL, you can try <a href="https://event.on24.com/utilApp/r" title="https://event.on24.com/utilApp/r">https://event.on24.com/utilApp/r</a> instead.</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<hr />
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"><b>HTTP POST Method</b></span></span></p>
+
+<ul>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">When in a batch mode or registering multiple users, you must also send the additional <strong>deletecookie=true</strong>&nbsp;parameter.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">UTF input isn&rsquo;t necessary if sending UTF-8, which is the default. If you&rsquo;re sending characters using a different encoding, change the hidden value to the proper character set. For example, ISO-8859-1.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Example request:</span></span></li>
+</ul>
+
+<div class="computer_code">
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">&lt;form name=&quot;myform&quot; action=&quot;https://event.on24.com/utilApp/r&quot; method=&quot;POST&quot;&gt;</span></span></p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">&lt;input type=&quot;hidden&quot; name=&quot;eventid&quot; value=&quot;XXXXX&quot;&gt;</span></span></p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">&lt;input type=&quot;hidden&quot; name=&quot;key&quot; value=&quot;XXXXX&quot;&gt;</span></span></p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">&lt;input type=&quot;text&quot; name=&quot;firstname&quot; value=&quot;john&quot;&gt;</span></span></p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">&lt;input type=&quot;text&quot; name=&quot;lastname&quot; value=&quot;smith&quot;&gt;</span></span></p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">&lt;input type=&quot;text&quot; name=&quot;email&quot; value=&quot;john.smith@abc.com&quot;&gt;</span></span></p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">&lt;input type=&quot;text&quot; name=&quot;company&quot; value=&quot;ABC, Inc.&quot;&gt;</span></span></p>
+
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">&lt;/form&gt;</span></span></p>
+</div>
+
+<p>&nbsp;</p>
+
+<hr />
+<p><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;"><b>Additional Notes</b></span></span></p>
+
+<ul>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">The Seamless Registration process will truncate any values that are sent with a greater number of characters than the designated limit.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">If a registrant record with the same email value of a registrant already exists in the database, the auto-registration script will update the record with the latest values being sent to the script. If the email value does not match an existing registrant record, a new record will be added to the database.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">Cannot guarantee results if fields with predefined business rules are used for other than defined purposes.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">When using HTTP GET, if any of the parameters includes the SPACE character, it must be defined using URL encoding i.e. &quot; &quot;. For example, &country=United States, this equates to &quot;United States&quot;. You do not need to encode the parameter values for POST.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">When using HTTP GET, some characters embedded within the field values, such as &quot;=&quot;, &quot;&&quot; etc., present the possibility of being misunderstood within URLs for various reasons. These characters should also always be encoded. You do not need to encode the parameter values for POST.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">The POST URL: <a href="https://event.on24.com/utilApp/r">https://event.on24.com/utilApp/r</a> may also be used for the GET if you are having trouble with the Standard HTTP GET URL.</span></span></li>
+	<li><span style="font-family:Arial,Helvetica,sans-serif;"><span style="font-size:14px;">If you use multiple registration pages for the same webcast, you can include a Partner Referral code to track the individual campaigns.</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+	  </div>
+ </div>
+ <div id="ui-page-fb-wrap"></div>
+ <div class="hiq-footer-wrap">
+    
+              <style>
+          .footer_type2 .footer_container {
+    flex: 1;
+}
+
+.footer_type2 a {
+    text-decoration: none;
+}
+
+.footer_type2 .links_block {
+    padding-top: 20px;
+    height: 100%;
+    display: flex;
+}
+
+.footer_prototype.footer_type2 {
+    background-color: #ffffff;
+    padding: 50px 20px;
+    height: 250px;
+    display: flex;
+}
+
+.footer_type2 .footer_links ul {
+    display: block;
+    float: left;
+}
+
+.footer_type2 .footer_links ul li {
+    display: inline-block;
+    margin: 0 20px 0 0px;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    display: inline-block;
+    margin: auto;
+}
+
+.footer_type2 .footer_social_icons ul {
+    margin: auto;
+    display: block;
+}
+
+.footer_type2 .footer_links {
+    display: block;
+    flex: 7;
+    position: relative;
+    right: 0;
+    /*
+         display: inline-block;
+         width: 100%;
+         */
+}
+
+.footer_type2 .footer_social_icons {
+    display: block;
+    flex: 7;
+    position: relative;
+    /*
+         display: inline-block;
+         width: 19%;
+         float: right;
+         */
+}
+
+.footer_type2 .footer_social_icons ul {
+    float: right;
+}
+
+.footer_type2 .copyright_text {
+    border-top: 1px solid #e4e4e4;
+}
+
+.footer_type2 .copyright_text p {
+    margin-top: 26px;
+    text-align: left;
+    color: #616161;
+}
+
+.footer_type2 .footer_links ul {
+    text-align: center;
+}
+
+.footer_type2 .footer_links ul li a {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i {
+    color: #616161;
+}
+
+.footer_type2 .footer_social_icons ul li a i::before {
+    font-size: 20px;
+}
+
+.footer_type2 .footer_social_icons ul li a img {
+    max-height: 100%;
+}
+
+.footer_type2 .footer_social_icons ul li {
+    margin: 0 10px;
+    max-width: 30px;
+}        </style>
+            <div class="footer_prototype footer_type2">
+    <!-- please make any changes to your footer after this line -->
+    <div class="footer_container">
+        <div class="copyright_text">
+            <p>© Copyright&nbsp;2024&nbsp;ON24, Inc.<br>ON24 patents may apply – click&nbsp;<a data-cke-saved-href="https://www.on24.com/on24-virtual-patent-marking/" href="https://www.on24.com/on24-virtual-patent-marking/">here</a>&nbsp;for more information.<br>All rights reserved.</p>
+        </div>
+    </div>
+</div>    
+  </div>
+
+
+</div>
+
+
+
+
+
